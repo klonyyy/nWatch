@@ -79,7 +79,6 @@
 #define LCD_DC 11
 #define LCD_WR 4
 #define LCD_RD 5
-#define LCD_CS 6
 #define LCD_RST 7
 
 #define RST_1 GPIOA->BSRRL|=GPIO_BSRR_BS_2

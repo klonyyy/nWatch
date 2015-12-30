@@ -78,14 +78,16 @@ void jpeg_decode(FIL *file, uint32_t width, uint8_t * buff, uint8_t (*callback)(
   jpeg_start_decompress(&cinfo);
 
   row_stride = width * 3;
-
+  LCD_area(0,0,320,240);
   while (cinfo.output_scanline < cinfo.output_height)
   {
     (void) jpeg_read_scanlines(&cinfo, buffer, 1);
     
 	  if(line_cnt==240)line_cnt=0;
-	  LCD_area(0,line_cnt,320,line_cnt);
+
 	  DMA_Config(row_stride,buffer[0]);
+//	   while(!(DMA2->LISR & DMA_LISR_TCIF0)){};
+//	   DMA2->LISR=0x00000000;
 	  line_cnt++;
   }
 
@@ -105,6 +107,7 @@ static uint8_t Jpeg_CallbackFunction(uint8_t* Row, uint32_t DataLength)
 //	  line_counter++;
 //	  return 0;
 }
+
 
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -45,6 +45,8 @@
 #include <stm32f4xx_rcc.h>
 #include <stm32f4xx_dma.h>
 
+#define Bank1_SRAM3_ADDR  ((uint32_t)0x68000000)
+
 /** @addtogroup Utilities
   * @{
   */
@@ -88,7 +90,9 @@
 
 void SRAM_Init(void);
 void SRAM_WriteBuffer(uint16_t* pBuffer, uint32_t WriteAddr, uint32_t NumHalfwordToWrite);
+void SRAM_WriteBuffer1(uint8_t* pBuffer, uint32_t WriteAddr, uint32_t NumHalfwordToWrite);
 void SRAM_ReadBuffer(uint16_t* pBuffer, uint32_t ReadAddr, uint32_t NumHalfwordToRead);
+void SRAM_ReadBuffer1(uint8_t* pBuffer, uint32_t ReadAddr, uint32_t NumHalfwordToRead);
 
 #ifdef __cplusplus
 }

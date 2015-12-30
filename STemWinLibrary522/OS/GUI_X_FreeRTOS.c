@@ -175,6 +175,9 @@ void GUI_X_SignalEvent (void)
   xSemaphoreGive( xSemaTxDone );
 }
 
+
+void GUI_X_ErrorOut(const char *s) { }
+
 /*********************************************************************
 *
 * Logging: OS dependent
@@ -191,6 +194,5 @@ functions automatically)
 
 void GUI_X_Log (const char *s) { }
 void GUI_X_Warn (const char *s) { }
-void GUI_X_ErrorOut(const char *s) { }
 
 /*************************** End of file ****************************/

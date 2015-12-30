@@ -62,9 +62,15 @@ Purpose     : Display controller initialization
 //
 // Define the available number of bytes available for the GUI
 //
-#define GUI_NUMBYTES  (1024) * 40
+//#define GUI_NUMBYTES  (1024) * 60
 //#define GUI_NUMBYTES 0x10000
-#define GUI_BLOCKSIZE 0x80
+//#define GUI_BLOCKSIZE 0x80
+
+#define GUI_BUFFER_IN_EXT_RAM                  //comment this to run from internal RAM
+#define GUI_NUMBYTES  ((1024) *  100)		//was 1024*150
+#ifdef GUI_BUFFER_IN_EXT_RAM
+#define GUI_BUFFER_ADDRESS  0xD0600000  //is first free space after last buffer ending = Nlayers*LAYER_BYTES see LCD conf
+#endif
 /*********************************************************************
 *
 *       Public code
@@ -79,11 +85,17 @@ Purpose     : Display controller initialization
 *   Called during the initialization process in order to set up the
 *   available memory for the GUI.
 */
-void GUI_X_Config(void) {
+void GUI_X_Config(void)
+{
   //
   // 32 bit aligned memory area
   //
-  static U32 aMemory[GUI_NUMBYTES / 4];
+	#ifdef GUI_BUFFER_IN_EXT_RAM
+//		static U32 aMemory[GUI_NUMBYTES / 4]__attribute__((at(GUI_BUFFER_ADDRESS)));
+	static U32 aMemory[GUI_NUMBYTES / 4]__attribute((section(".ExRam")));
+	#else
+		static U32 aMemory[GUI_NUMBYTES / 4];
+	#endif
   //
   // Assign memory to emWin
   //

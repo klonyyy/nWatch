@@ -15,7 +15,29 @@ volatile u16 xr=0,yr=0;
 u8 once=1;
 int sek=0;
 u16 lastyy,lastid,lasttb,scrl=0,lastbid,first;
+u16 prevx,prevy;
 char t[10];
+
+void i2c_ini(void)
+{
+    I2C_InitTypeDef i2c_init;
+    I2C_DeInit(I2C2 );       //Deinit and reset the I2C to avoid it locking up
+    I2C_SoftwareResetCmd(I2C2, ENABLE);
+    int var;
+    for ( var= 0; var < 0xffff; ++var) {};
+    I2C_SoftwareResetCmd(I2C2, DISABLE);
+
+    i2c_init.I2C_ClockSpeed = 400000;
+    i2c_init.I2C_Mode = I2C_Mode_I2C;
+    i2c_init.I2C_DutyCycle = I2C_DutyCycle_2;
+    i2c_init.I2C_OwnAddress1 = 0x0A;
+    i2c_init.I2C_Ack = I2C_Ack_Enable;
+    i2c_init.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit;
+    I2C_Init(I2C2, &i2c_init);
+
+    I2C_StretchClockCmd(I2C2, ENABLE);
+    I2C_Cmd(I2C2, ENABLE);
+}
 
 uint8_t stmpe811_TestConnection(void)
 {
@@ -115,9 +137,12 @@ u8 read_touch_but(touch *pressed)
 	{
 		pressed->hold_but=1;
 
-		pressed->y=((yr-450)*240)/(3000); ///TP_Y=((TP_Y-CAL_Y_0)*320)/(CAL_Y-CAL_Y_0);
+		pressed->y=((yr-450)*240)/(3000); ///TP_Y=((TP_Y-CAL_Y_0)*320)/(CAL_Y-CAL_Y_0); ////y
 		pressed->x=((xr-600)*320)/(3200); ///TP_X=((TP_X-511)*240)/(CAL_X_0-CAL_X);
 		pressed->x=320-pressed->x;
+
+
+
 //		LCD_box_mid_fill(pressed->x,pressed->y,3,3,0xff00ff);
 
 		if(pressed->last_but==0)
@@ -321,19 +346,21 @@ u8 touch_reg(touch *pressed)
 	{
 		I2C_Read_Reg( 0x4f, x,2 );
 		I2C_Read_Reg( 0x4d, y,2 );
-		xa = ((x[0]<<8)|x[1]);
-		ya = ((y[0]<<8)|y[1]);
+		ya = ((x[0]<<8)|x[1]);
+		xa = ((y[0]<<8)|y[1]);
 		I2C_Write_Byte(0x0b, 0xff);
 		I2C_Write_Byte(0x4b, 0x01);
 		I2C_Write_Byte(0x4b, 0x00);
 
+		prevx=pressed->x;
+		prevy=pressed->y;
+
 		pressed->y=((ya-450)*240)/(3000); ///TP_Y=((TP_Y-CAL_Y_0)*320)/(CAL_Y-CAL_Y_0);
 		pressed->x=((xa-600)*320)/(3200); ///TP_X=((TP_X-511)*240)/(CAL_X_0-CAL_X);
-		pressed->x=320-pressed->x;
 		return 1;
 	}
-	pressed->y=400;
-	pressed->x=400;
+	pressed->y=prevy;
+	pressed->x=prevx;
 	I2C_Write_Byte(0x0b, 0xff);
 	I2C_Write_Byte(0x4b, 0x01);
 	I2C_Write_Byte(0x4b, 0x00);
@@ -353,8 +380,8 @@ void EXTI9_5_IRQHandler(void)
 		down=1;
 		I2C_Read_Reg( 0x4f, x,2 );
 		I2C_Read_Reg( 0x4d, y,2 );
-		xr = ((x[0]<<8)|x[1]);
-		yr = ((y[0]<<8)|y[1]);
+		yr = ((x[0]<<8)|x[1]);
+		xr = ((y[0]<<8)|y[1]);
 		hold++;
 	}
 	else if((zk & 0x01))
@@ -364,9 +391,9 @@ void EXTI9_5_IRQHandler(void)
 
 	}
 
-//	I2C_Write_Byte(0x0b, 0xff);
-//	I2C_Write_Byte(0x4b, 0x01);
-//	I2C_Write_Byte(0x4b, 0x00);
+	I2C_Write_Byte(0x0b, 0xff);
+	I2C_Write_Byte(0x4b, 0x01);
+	I2C_Write_Byte(0x4b, 0x00);
 
 	EXTI->PR |= EXTI_PR_PR5;
 }

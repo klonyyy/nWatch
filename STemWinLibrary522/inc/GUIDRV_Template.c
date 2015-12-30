@@ -73,6 +73,9 @@ Purpose     : Template driver, could be used as starting point for new
 *
 *       Macros for MIRROR_, SWAP_ and LUT_
 */
+
+//#define LCD_SWAP_XY 1
+
 int iz=0;
 
 
@@ -213,7 +216,7 @@ static unsigned int _GetPixelIndex(GUI_DEVICE * pDevice, int x, int y) {
 		  RR=LCD_WRITE_DATA;
 		  for(int y=0;y<50;y++);
 		  BB=LCD_WRITE_DATA;
-//		  for(int y=0;y<500;y++);
+//		  for(int y=0;y<150;y++);
 		  PixelIndex= ((RR&0x0ff)<<16)|((GG&0x0ff)<<8)|(BB&0x0ff);
 
     }

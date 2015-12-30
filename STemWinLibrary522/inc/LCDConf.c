@@ -98,7 +98,7 @@ Purpose     : Display controller configuration (single layer)
 */
 static void LcdWriteReg(U16 Data)
 {
-	LCD_WRITE_COMMAND=Data;
+//	LCD_WRITE_COMMAND=Data;
 }
 
 /********************************************************************
@@ -110,7 +110,7 @@ static void LcdWriteReg(U16 Data)
 */
 static void LcdWriteData(U16 Data)
 {
-	LCD_WRITE_COMMAND=Data;
+//	LCD_WRITE_COMMAND=Data;
 }
 
 /********************************************************************
@@ -122,7 +122,7 @@ static void LcdWriteData(U16 Data)
 */
 static void LcdWriteDataMultiple(U16 * pData, int NumItems) {
   while (NumItems--) {
-	  LCD_WRITE_DATA=*pData++;
+//	  LCD_WRITE_DATA=*pData++;
   }
 }
 
@@ -136,7 +136,7 @@ static void LcdWriteDataMultiple(U16 * pData, int NumItems) {
 static void LcdReadDataMultiple(U16 * pData, int NumItems) {
   while (NumItems--)
   {
-	  *pData++=LCD_WRITE_COMMAND;
+//	  *pData++=LCD_WRITE_COMMAND;
   }
 }
 
@@ -168,11 +168,7 @@ void LCD_X_Config(void) {
   //
   LCD_SetSizeEx (0, XSIZE_PHYS , YSIZE_PHYS);
   LCD_SetVSizeEx(0, VXSIZE_PHYS, VYSIZE_PHYS);
-  //
-//  LCD_SetVSizeEx (0, XSIZE_PHYS, YSIZE_PHYS);
-//  GUI_TOUCH_SetOrientation (DISPLAY_ORIENTATION);
-//  GUI_TOUCH_Calibrate (GUI_COORD_X, 0, XSIZE_PHYS - 1, TOUCH_X_MIN, TOUCH_X_MAX);
-//  GUI_TOUCH_Calibrate (GUI_COORD_Y, 0, YSIZE_PHYS - 1, TOUCH_Y_MIN, TOUCH_Y_MAX);
+
 }
 
 /*********************************************************************

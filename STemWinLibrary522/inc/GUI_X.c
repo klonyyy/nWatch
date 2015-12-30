@@ -57,7 +57,7 @@ Purpose     : Config / System dependent externals for GUI
 *
 *       Global data
 */
-volatile GUI_TIMER_TIME OS_TimeMS;
+//volatile GUI_TIMER_TIME OS_TimeMS;
 
 /*********************************************************************
 *
@@ -80,15 +80,15 @@ volatile GUI_TIMER_TIME OS_TimeMS;
 //}
 
 
-GUI_TIMER_TIME GUI_X_GetTime(void)
-{
- return ((int) xTaskGetTickCount());
-}
-
-void GUI_X_Delay(int ms)
-{
- vTaskDelay( ms );
-}
+//GUI_TIMER_TIME GUI_X_GetTime(void)
+//{
+// return ((int) xTaskGetTickCount());
+//}
+//
+//void GUI_X_Delay(int ms)
+//{
+// vTaskDelay( ms );
+//}
 
 /*********************************************************************
 *
@@ -100,7 +100,7 @@ void GUI_X_Delay(int ms)
 *     If not required, leave this routine blank.
 */
 
-void GUI_X_Init(void) {}
+//void GUI_X_Init(void) {}
 
 
 /*********************************************************************
@@ -111,7 +111,7 @@ void GUI_X_Init(void) {}
 *  Called if WM is in idle state
 */
 
-void GUI_X_ExecIdle(void) {}
+//void GUI_X_ExecIdle(void) {}
 
 /*********************************************************************
 *
@@ -127,8 +127,8 @@ Note:
 
 */
 
-void GUI_X_Log     (const char *s) { GUI_USE_PARA(s); }
-void GUI_X_Warn    (const char *s) { GUI_USE_PARA(s); }
-void GUI_X_ErrorOut(const char *s) { GUI_USE_PARA(s); }
+//void GUI_X_Log     (const char *s) { GUI_USE_PARA(s); }
+//void GUI_X_Warn    (const char *s) { GUI_USE_PARA(s); }
+//void GUI_X_ErrorOut(const char *s) { GUI_USE_PARA(s); }
 
 /*************************** End of file ****************************/

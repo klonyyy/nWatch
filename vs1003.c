@@ -91,17 +91,16 @@ void Mp3SoftReset(void)
 
 	Mp3WriteRegister (SPI_MODE, 0x08, 0x20);
 	while(DREQ);
-	Mp3WriteRegister(SPI_CLOCKF, 0x8b, 0xe8);
-	Mp3WriteRegister(SPI_BASS, 0x00, 0x55);
-	Mp3WriteRegister(SPI_AUDATA,0xAC,0x45);
-	Mp3SetVolume(0x7a,0x7a);
+    Mp3WriteRegister(SPI_CLOCKF,0x8B,0xE8);
+    Mp3WriteRegister(SPI_BASS,0x08,0x00);
+//	Mp3SetVolume(0x7a,0x7a);
 //
-    SDI_ChipSelect(SET);
-	SPIPutChar(0);
-	SPIPutChar(0);
-	SPIPutChar(0);
-	SPIPutChar(0);
-	SDI_ChipSelect(RESET);
+//    SDI_ChipSelect(SET);
+//	SPIPutChar(0);
+//	SPIPutChar(0);
+//	SPIPutChar(0);
+//	SPIPutChar(0);
+//	SDI_ChipSelect(RESET);
 
 //	Mp3WriteRegister(SPI_MODE,0x00,0x04);
 }
@@ -139,13 +138,23 @@ void VS1053_Start()
         Delay(100);
 
         while(GPIO_ReadInputDataBit(DREQ_PORT,DREQ_PIN) == 0);
+//
+//        Mp3WriteRegister(SPI_MODE,0x08,0x00);
+//        Mp3WriteRegister(SPI_CLOCKF,0x98,0x00);
+//        Mp3WriteRegister(SPI_AUDATA,0xAC,0x45);
+//        Mp3WriteRegister(SPI_BASS,0x08,0x00);
+//        Mp3WriteRegister(SPI_VOL,0x0B,0x0B);
+//        Mp3WriteRegister(SPI_STATUS,0,0b00110011);
+//
+//
+//    	while(GPIO_ReadInputDataBit(DREQ_PORT,DREQ_PIN) == 0);
 
-        Mp3WriteRegister(SPI_MODE,0x08,0x00);
-        Mp3WriteRegister(SPI_CLOCKF,0x98,0x00);
-        Mp3WriteRegister(SPI_AUDATA,0xAC,0x45);
+        Mp3WriteRegister(SPI_MODE,0x00,0x80);
+        Mp3WriteRegister(SPI_CLOCKF,0x8B,0xE8);
         Mp3WriteRegister(SPI_BASS,0x08,0x00);
-        Mp3WriteRegister(SPI_VOL,0x0B,0x0B);
-        Mp3WriteRegister(SPI_STATUS,0,0b00110011);
+        Mp3WriteRegister(SPI_VOL,0x6f,0x6f);
+
+//    	while(GPIO_ReadInputDataBit(DREQ_PORT,DREQ_PIN) == 0);
 
         while(GPIO_ReadInputDataBit(DREQ_PORT,DREQ_PIN) == 0);
 }
@@ -414,7 +423,7 @@ void VS1003_Config(void)
 //  SPI_SSOutputCmd(SPI1, ENABLE);
 
   /* Enable SPI1 */
-  SPI_Cmd(SPI1, ENABLE);
+//  SPI_Cmd(SPI1, ENABLE);
 
 
 //  GPIOB->BSRRL|=GPIO_BSRR_BR_3; /////w³acznie uk³¹du

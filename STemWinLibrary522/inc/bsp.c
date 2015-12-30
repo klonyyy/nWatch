@@ -92,9 +92,8 @@ void BSP_Pointer_Update(void)
   GUI_PID_STATE TS_State={0};
   touch pressed={0};
 
-  portENTER_CRITICAL();
+//  portENTER_CRITICAL();
   u8 a=touch_reg(&pressed);
-
 
   TS_State.x = pressed.x;
   TS_State.y = pressed.y;
@@ -112,7 +111,7 @@ void BSP_Pointer_Update(void)
   }
 
   lastyyy=pressed.x;
-  portEXIT_CRITICAL();
+//  portEXIT_CRITICAL();
 
 }
 

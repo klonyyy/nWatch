@@ -14,9 +14,9 @@
 
 #define LED_OFF GPIOD->BSRRH|=GPIO_BSRR_BS_6
 
-#define CMD_AREA            (u32)(1<<16)
-#define LCD_WRITE_COMMAND 	*(vu8 *)(Bank_NAND_ADDR | DATA_AREA)
-#define LCD_WRITE_DATA 		*(vu8 *)(Bank_NAND_ADDR | CMD_AREA)
+//#define CMD_AREA            (u32)(1<<16)
+//#define LCD_WRITE_COMMAND 	*(vu8 *)(Bank_NAND_ADDR | DATA_AREA)
+//#define LCD_WRITE_DATA 		*(vu8 *)(Bank_NAND_ADDR | CMD_AREA)
 
 u8 vertical=0;
 
@@ -43,7 +43,8 @@ void LCD_init()
 	for(int k=0;k<0xffff;k++);
 	LCD_WRITE_COMMAND = DISPON;//send 1 byte
 	LCD_WRITE_COMMAND=(MADCTR);
-	LCD_WRITE_DATA = (0xff);
+	LCD_WRITE_DATA = (0x66);
+	  LCD_paint(0x00ff00);
 
 }
 /*************************************************/
@@ -52,21 +53,19 @@ void LCD_init()
 
 void FSMC_NAND_Init(void)
 {
-//  FSMC_NANDInitTypeDef FSMC_NANDInitStructure;
-//  FSMC_NANDInitTypeDef FSMC_NANDInitStructure2;
-//  FSMC_NAND_PCCARDTimingInitTypeDef  p;
-//  p.FSMC_SetupTime = 0;//1
-//  p.FSMC_WaitSetupTime = 1;//2
-//  p.FSMC_HoldSetupTime = 1;//1
-//  p.FSMC_HiZSetupTime = 0;
 
-  FSMC_Bank2->PCR2|=FSMC_ECCPageSize_8192Bytes;  //page 8192 bytres
-  FSMC_Bank2->PCR2&=~FSMC_PCR2_PWID;             //bus width 8b
-  FSMC_Bank2->PCR2|=FSMC_PCR2_PWAITEN; 			//pwait enable
-//  FSMC_Bank2->PCR2|=FSMC_PCR2_PBKEN;           //do not turn on this bank
 
-  FSMC_Bank3->PCR3|=FSMC_PCR3_PBKEN;            // turn on bank 3 instead
 
+  FSMC_Bank3->PCR3|=FSMC_ECCPageSize_8192Bytes;  //page 8192 bytres
+  FSMC_Bank3->PCR3&=~FSMC_PCR3_PWID;             //bus width 8b
+//  FSMC_Bank2->PCR2|=FSMC_PCR2_PWAITEN; 			//pwait enable
+  FSMC_Bank3->PCR3|=FSMC_PCR3_PBKEN;           //do not turn on this bank
+//
+//  FSMC_Bank2->PCR2|=FSMC_ECCPageSize_8192Bytes;  //page 8192 bytres
+//  FSMC_Bank2->PCR2&=~FSMC_PCR2_PWID;             //bus width 8b
+////  FSMC_Bank2->PCR2|=FSMC_PCR2_PWAITEN; 			//pwait enable
+  FSMC_Bank2->PCR2|=FSMC_PCR2_PBKEN;
+//
 //  FSMC_Bank2->PMEM2=FSMC_PMEM2_MEMHIZ2_0;
 //  FSMC_Bank2->PMEM2=FSMC_PMEM2_MEMHOLD2_2;
 //  FSMC_Bank2->PMEM2=FSMC_PMEM2_MEMSET2_0;
@@ -77,7 +76,6 @@ void FSMC_NAND_Init(void)
 //  FSMC_Bank2->PATT2=FSMC_PMEM2_MEMSET2_0;
 //  FSMC_Bank2->PATT2=FSMC_PMEM2_MEMWAIT2_1;
 
-
     FSMC_Bank3->PMEM3=FSMC_PMEM3_MEMHIZ3_0;
     FSMC_Bank3->PMEM3=FSMC_PMEM3_MEMHOLD3_2;
     FSMC_Bank3->PMEM3=FSMC_PMEM3_MEMSET3_0;
@@ -87,7 +85,6 @@ void FSMC_NAND_Init(void)
     FSMC_Bank3->PATT3=FSMC_PMEM3_MEMHOLD3_2;
     FSMC_Bank3->PATT3=FSMC_PMEM3_MEMSET3_0;
     FSMC_Bank3->PATT3=FSMC_PMEM3_MEMWAIT3_1;
-
 }
 
 /*************************************************/
