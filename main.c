@@ -1912,9 +1912,10 @@ static void _cbSelected(WM_MESSAGE * pMsg)
 //		GUI_SetBkColor(_aMenu[Index].Color);
 //		GUI_Clear();
 
-		if(Index==9)
+		if(Index==2)
 		{
 			 xTaskCreate(MP3_player,(char const*)"MP3_player",2048,NULL,tskIDLE_PRIORITY + 2,&MP3_Handle);
+
 		}
 
 		break;
@@ -1949,14 +1950,14 @@ static void _CreateSelected(int Index, WM_HWIN hWin)
   WM_SetUserData(hWinSelected, &Index, sizeof(Index));
   //
   // Window animation
-  //
-  GUI_MEMDEV_ShiftOutWindow(hWinBase, 500, GUI_MEMDEV_EDGE_LEFT);
-  GUI_Delay(500);
-  GUI_MEMDEV_ShiftInWindow(hWinBase, 500, GUI_MEMDEV_EDGE_LEFT);
+//
+//  GUI_MEMDEV_ShiftOutWindow(hWinBase, 500, GUI_MEMDEV_EDGE_LEFT);
+//  GUI_Delay(500);
+//  GUI_MEMDEV_ShiftInWindow(hWinBase, 500, GUI_MEMDEV_EDGE_LEFT);
   //
   // Remove the new window
   //
-  WM_DeleteWindow(hWinSelected);
+//  WM_DeleteWindow(hWinSelected);
 }
 
 /*********************************************************************
@@ -2067,10 +2068,7 @@ u8 rand[250]__attribute((section(".ExRam")));
 uint8_t _aucLine[8192]__attribute((section(".ExRam")));
 FRESULT f=0;
 FILINFO fno;
-//char buer[24]="dziala ko";
-//FIL fsrc;
-//DIR dir;
-//FATFS fs;
+char t[10];
 
 int main(void)
 {
@@ -2206,10 +2204,10 @@ int main(void)
 
 
 //	  xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 2,&MP3_Handle);
+	  xTaskCreate(Demo_Task,(char const*)"GUI_DEMO",2048,NULL,tskIDLE_PRIORITY  + 3,&Demo_Handle);
 	  xTaskCreate(Menu,(char const*)"Menu",2048,NULL,tskIDLE_PRIORITY + 2,&Menu_Handle);
-	  xTaskCreate(Demo_Task,(char const*)"GUI_DEMO",2048,NULL,tskIDLE_PRIORITY  + 2,&Demo_Handle);
-	  xTaskCreate(Background_Task,(char const*)"BK_GND",1024,NULL,tskIDLE_PRIORITY + 2,&Task_Handle);
-	  TouchScreenTimer = xTimerCreate ("Timer",20, pdTRUE,( void * ) 1, vTimerCallback);
+//	  xTaskCreate(Background_Task,(char const*)"BK_GND",1024,NULL,tskIDLE_PRIORITY + 2,&Task_Handle);
+	  TouchScreenTimer = xTimerCreate ("Timer",60, pdTRUE,( void * ) 1, vTimerCallback);
 
 	  if( TouchScreenTimer != NULL )
 	  {
@@ -2228,26 +2226,35 @@ void Demo_Task( void * pvParameters)
 	xLastFlashTime = xTaskGetTickCount();
 
 	WM_HWIN hWin=CreateBar();
-	WM_HWIN hItem;
+	WM_HWIN hItem,hText;
+	WM_HWIN hButton3;
 
 	while(1)
 	{
-//		  vTaskDelayUntil(&xLastFlashTime, 500/portTICK_RATE_MS);///////////////////////////////////
-		  ADC_SoftwareStartConv(ADC1);
-		  while(ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) == RESET);
-		  int result= ADC_GetConversionValue(ADC1);
-		  result = result * 8059/10000;
-		  hItem = WM_GetDialogItem(hWin, ID_PROGBAR_2);
-		  PROGBAR_SetValue(hItem,result*100/3100);
 
-			WM_HWIN hButton = WM_GetDialogItem(hWin, ID_BACK);
+		vTaskDelayUntil(&xLastFlashTime, 200/portTICK_RATE_MS);///////////////////////////////////
+//		GUI_Delay(250);
+		WM_Paint(hWin);
+//		taskENTER_CRITICAL();
+	    hButton3 = WM_GetDialogItem(hWin, ID_BACK);
 
-			if(BUTTON_IsPressed(hButton))
-			{
-				vTaskDelete(MP3_Handle);
-				xTaskCreate(Menu,(char const*)"Menu",2048,NULL,tskIDLE_PRIORITY + 2,&Menu_Handle);
-				WM_HWIN hWin=CreateBar();
-			}
+		if(BUTTON_IsPressed(hButton3))
+		{
+			while(BUTTON_IsPressed(hButton3)){};
+			xTaskCreate(Menu,(char const*)"Menu",2048,NULL,tskIDLE_PRIORITY + 2,&Menu_Handle);
+			vTaskDelete(MP3_Handle);
+		}
+//
+	    ADC_SoftwareStartConv(ADC1);
+	    while(ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) == RESET);
+	    int result= ADC_GetConversionValue(ADC1);
+	    result = result * 8059/10000;
+	    hItem = WM_GetDialogItem(hWin, ID_PROGBAR_2);
+	    hText = WM_GetDialogItem(hWin, ID_TEXT_2);
+	    PROGBAR_SetValue(hItem,result*100/3100);
+	    TEXT_SetText(hText, itoa(uxTaskGetNumberOfTasks(),t,10));
+	    GUI_Exec();
+
 	}
 }
 static void Menu(void *pvParameters)
@@ -2266,6 +2273,7 @@ static void Menu(void *pvParameters)
 	  hWinBase     = WM_CreateWindow       (0,  0, xSize, ySize ,                                  WM_CF_SHOW, _cbDummy, 0);
 	  hWinViewport = WM_CreateWindowAsChild(0, 60, xSize, ySize - 60,               hWinBase,     WM_CF_SHOW, _cbDummy, 0);
 	  hWinMenu     = WM_CreateWindowAsChild(0,  0, xSize, 60 * GUI_COUNTOF(_aMenu), hWinViewport, WM_CF_SHOW | WM_CF_MOTION_Y, _cbMenu, 0);
+//	  CreateBar();
 
 	while(1)
 	{
@@ -2351,10 +2359,10 @@ static void MP3_player(void *pvParameters)
 
 	vTaskDelete(Menu_Handle);
 
-//	vTaskSuspend(Menu);
-
 	while(1)
 	{
+
+		vTaskDelayUntil(&xLastFlashTime, 1000/portTICK_RATE_MS);
 
 //		hText1 = WM_GetDialogItem(hWin, ID_TEXT_1);
 		hText = WM_GetDialogItem(hWin, ID_TEXT_0);
@@ -2363,6 +2371,7 @@ static void MP3_player(void *pvParameters)
 		hProgBar = WM_GetDialogItem(hWin, ID_PROGBAR_0);
 		hButton = WM_GetDialogItem(hWin, ID_BUTTON_0);
 		hButton1 = WM_GetDialogItem(hWin, ID_BUTTON_1);
+		hButton2 = WM_GetDialogItem(hWin, ID_BUTTON_2);
 
 //		GUI_DispDecAt(uxTaskGetNumberOfTasks(),150,0,2);
 
@@ -2423,6 +2432,12 @@ static void MP3_player(void *pvParameters)
 			while(BUTTON_IsPressed(hButton)){};
 			fin=1;
 		}
+//		if(BUTTON_IsPressed(hButton2))
+//		{
+//			while(BUTTON_IsPressed(hButton2)){};
+//			xTaskCreate(Menu,(char const*)"Menu",2048,NULL,tskIDLE_PRIORITY + 2,&Menu_Handle);
+//			vTaskDelete(MP3_Handle);
+//		}
 		if(BUTTON_IsPressed(hButton1))
 		{
 			while(BUTTON_IsPressed(hButton1)){};
@@ -2499,8 +2514,6 @@ static void MP3_player(void *pvParameters)
 			TEXT_SetText(hText,&name[6]);
 			fin=0;
 		}
-
-		vTaskDelayUntil(&xLastFlashTime, 500/portTICK_RATE_MS);
 
 	}
 
@@ -2941,12 +2954,12 @@ void vApplicationIdleHook(void)
 	{
 		i++;
 
-		if(i>90000000)
-		{
+//		if(i>90000000)
+//		{
 			LCD_String_lc("in idle",5,10,RED,GREEN,2);
 //			GUI_DispStringAt("IN IDLE",50,50);
 			i=0;
-		}
+//		}
 //		LCD_box_mid_fill(0,0,5,5,RED);
 //		GUI_DispStringAt("IN IDLE",50,50);
 //		LCD_String_lc("in idle",5,10,RED,GREEN,2);
