@@ -88,13 +88,13 @@ int get_random(int form,int to);
 void ADC1_Configuration(void);
 //////////////////////////////////////TASKs//////////////////////////////////////////////////////
 xTaskHandle                   Task_Handle;
-xTaskHandle                   Demo_Handle;
+xTaskHandle                   Heading_Handle;
 xTaskHandle                   MP3_Handle;
 xTaskHandle                   Menu_Handle;
 xTimerHandle                  TouchScreenTimer;
 
 static void Background_Task(void * pvParameters);
-static void Demo_Task(void * pvParameters);
+static void Heading_Task(void * pvParameters);
 static void vTimerCallback( xTimerHandle pxTimer );
 static void MP3_player(void *pvParameters);
 static void Menu(void *pvParameters);
@@ -2212,7 +2212,7 @@ int main(void)
 
 //	  xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 2,&MP3_Handle);
 	  xTaskCreate(Background_Task,(char const*)"BK_GND",2048,NULL,tskIDLE_PRIORITY + 3,&Task_Handle);
-	  xTaskCreate(Demo_Task,(char const*)"GUI_DEMO",2048,NULL,tskIDLE_PRIORITY  + 4,&Demo_Handle);
+	  xTaskCreate(Heading_Task,(char const*)"GUI_DEMO",2048,NULL,tskIDLE_PRIORITY  + 4,&Heading_Handle);
 	  xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 3,&Menu_Handle);
 	  TouchScreenTimer = xTimerCreate ("Timer",60, pdTRUE,( void * ) 1, vTimerCallback);
 
@@ -2227,7 +2227,7 @@ int main(void)
 	    vTaskStartScheduler();
 }
 
-void Demo_Task( void * pvParameters)
+void Heading_Task( void * pvParameters)
 {
 	portTickType xLastFlashTime;
 	xLastFlashTime = xTaskGetTickCount();
@@ -2345,6 +2345,8 @@ static void MP3_player(void *pvParameters)
 	FATFS fs;
 //	FILINFO fno;
 
+//	vTaskDelay(100);
+	vTaskDelete(Menu_Handle);
 
 	taskENTER_CRITICAL();
 
@@ -2396,12 +2398,12 @@ static void MP3_player(void *pvParameters)
 	name[4]='c';
 	name[5]='/';
 
-	vTaskDelete(Menu_Handle);
+
 
 	while(1)
 	{
 
-//		vTaskDelayUntil(&xLastFlashTime, 1000/portTICK_RATE_MS);
+		vTaskDelayUntil(&xLastFlashTime, 50/portTICK_RATE_MS);
 
 //		hText1 = WM_GetDialogItem(hWin, ID_TEXT_1);
 		hText = WM_GetDialogItem(hWin, ID_TEXT_0);
@@ -2418,7 +2420,7 @@ static void MP3_player(void *pvParameters)
 
 		taskENTER_CRITICAL();
 		f=f_read(&fsrc, buffer, sizeof(buffer), &br);
-		taskEXIT_CRITICAL();
+
 
 
 		   if(f == 0)
@@ -2446,6 +2448,8 @@ static void MP3_player(void *pvParameters)
 		 int dec1=size/(VS1003_GetBitrate()*1000/8);
 		 u16 dec=Mp3ReadRegister(SPI_DECODE_TIME);
 		 PROGBAR_SetValue(hProgBar, dec*100/dec1 );
+
+		 taskEXIT_CRITICAL();
 
 		if(button)
 		{
@@ -2487,6 +2491,8 @@ static void MP3_player(void *pvParameters)
 
 		if(fin==1)
 		{
+
+//			vTaskSuspend(Heading_Handle);
 
 //			GUI_DispDecAt(co,0,0,5);
 
@@ -2552,6 +2558,7 @@ static void MP3_player(void *pvParameters)
 //
 			TEXT_SetText(hText,&name[6]);
 			fin=0;
+//			vTaskResume(Heading_Handle);
 		}
 
 	}

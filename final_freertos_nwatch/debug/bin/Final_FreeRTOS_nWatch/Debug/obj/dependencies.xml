@@ -1,0 +1,1219 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST /I..\..\..\workspace\Final_FreeRTOS_nWatch\elements /I..\..\..\workspace\Final_FreeRTOS_nWatch\STemWin\Config /I..\..\..\workspace\Final_FreeRTOS_nWatch\USB\DEVICE_lib /I..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin /I..\..\..\workspace\Final_FreeRTOS_nWatch\FreeRTOS\Source\include /I..\..\..\workspace\Final_FreeRTOS_nWatch\USB\HOST_lib /I..\..\..\workspace\Final_FreeRTOS_nWatch\cmsis_boot /I..\..\..\workspace\Final_FreeRTOS_nWatch\cmsis_lib /I..\..\..\workspace\Final_FreeRTOS_nWatch\FreeRTOS\Source\portable\GCC /I..\..\.. /I..\..\..\workspace\Final_FreeRTOS_nWatch\STemWin /I..\..\..\workspace\Final_FreeRTOS_nWatch\cmsis /I..\..\..\workspace\Final_FreeRTOS_nWatch\FreeRTOS /I..\..\..\workspace\Final_FreeRTOS_nWatch\jpeg /I..\..\..\workspace\Final_FreeRTOS_nWatch\STemWinLibrary522 /I..\..\..\workspace\Final_FreeRTOS_nWatch\ff /I..\..\..\workspace\Final_FreeRTOS_nWatch\USB\DRD /I..\..\..\workspace\Final_FreeRTOS_nWatch\FreeRTOS\Source /I..\..\..\workspace\Final_FreeRTOS_nWatch\USB /I..\..\..\workspace\Final_FreeRTOS_nWatch\sram /I..\..\..\workspace\Final_FreeRTOS_nWatch\USB\OTG_driver /I..\..\..\workspace\Final_FreeRTOS_nWatch\apps /I..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\Config /I..\..\..\workspace\Final_FreeRTOS_nWatch\FreeRTOS\Source\portable\GCC\ARM_CM4F /I..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc /I..\..\..\workspace\Final_FreeRTOS_nWatch\libjpeg /I..\..\..\workspace\Final_FreeRTOS_nWatch\touch /I..\..\..\workspace\Final_FreeRTOS_nWatch /I..\..\..\workspace /I..\..\..\workspace\Final_FreeRTOS_nWatch\nokia_LCD /I..\..\..\workspace\Final_FreeRTOS_nWatch\FreeRTOS\Source\portable /I..\..\..\workspace\Final_FreeRTOS_nWatch\cmsis_lib\include">
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd_int.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\syscalls\syscalls.c" lastModified="14f1b8e81e1">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Private.h" lastModified="14e9169ab14">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_Protected.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Debug.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM_GUI.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd_int.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd_int.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\bsp.h" lastModified="1503854e2c7">
+         <include file="..\..\..\..\..\..\STemWin\Config\global_includes.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\vs1003.h" lastModified="15164eaff61">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\croutine.h" lastModified="143da0840a7">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\bsp.c" lastModified="151e4465c29">
+         <include file="..\..\..\..\..\..\STemWin\Config\bsp.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\sdio_stm32f4.h" lastModified="150f72206bb">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\ff\diskio.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\vs1003.c" lastModified="1518dde07d5">
+         <include file="..\..\..\..\..\..\vs1003.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_Private.h" lastModified="14e9169aabf">
+         <include file="..\..\..\..\..\..\STemWin\Config\LCDConf.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_Protected.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_dma.h" lastModified="14f9f812a14">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcinit.c" lastModified="14e8ca12058">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\sdio_stm32f4.c" lastModified="150f71f559b">
+         <include file="..\..\..\..\..\..\ff\sdio_stm32f4.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="14f9f76482e">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="152089ff9c1">
+      </source>
+      <source file="..\..\..\..\..\..\elements\list1.h" lastModified="150c730decf">
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdsample.c" lastModified="14e8ca11b17">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CHOOSEFILE.h" lastModified="14e9169974b">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SCROLLBAR.h" lastModified="14e91699764">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h" lastModified="14a0f652ac0">
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h" lastModified="150ca56caea">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\portable.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\mp3.h" lastModified="15183c65b88">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_regs.h" lastModified="14f3bf42489">
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_rtc.c" lastModified="14f9f82ccd8">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rtc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\timers.h" lastModified="143da08404a">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\portable.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\list.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\mp3.c" lastModified="151eb0cc50d">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+         <include file="..\..\..\..\..\..\mp3.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\queue.c" lastModified="143da0849de">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SLIDER.h" lastModified="14e91697ffd">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_sdio.h" lastModified="14f9f7623a9">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_Protected.h" lastModified="14e9169aa3a">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="151c57581e0">
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdcolor.c" lastModified="14e8ca11a0e">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="151c6a0ebc3">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\global_includes.h" lastModified="151d026d8a2">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DROPDOWN.h" lastModified="14e91699702">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTBOX.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbd_storage_msd.c" lastModified="14f40133f28">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_mem.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\EDIT.h" lastModified="14e9169ab1a">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jfdctflt.c" lastModified="14e8ca11e15">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h" lastModified="14e916997ba">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM_GUI.h" lastModified="14e91699784">
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_data.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\elements\textbox.h" lastModified="14fbe312086">
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h" lastModified="14e91698034">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\BUTTON.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CALENDAR.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CHECKBOX.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CHOOSECOLOR.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CHOOSEFILE.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DROPDOWN.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\EDIT.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\FRAMEWIN.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GRAPH.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\HEADER.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\ICONVIEW.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\IMAGE.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTBOX.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTVIEW.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTWHEEL.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MENU.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MULTIEDIT.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MULTIPAGE.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\PROGBAR.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\RADIO.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SCROLLBAR.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SLIDER.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SPINBOX.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\TEXT.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\TREEVIEW.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\KNOB.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis\core_cmInstr.h" lastModified="14f9f7330d6">
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jidctflt.c" lastModified="14e8ca11dcc">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h" lastModified="150f71b353d">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\list.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\projdefs.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\FreeRTOSConfig.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\portable.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdcoefct.c" lastModified="14e8ca12002">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_data.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_data.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Version.h" lastModified="14e9169aa7c">
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_pwr.h" lastModified="14f9f8333d2">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\elements\textbox.c" lastModified="14feb5c9138">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\itoa.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\..\..\..\elements\textbox.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="14f9f760794">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\semphr.h" lastModified="143da083fdd">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\queue.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcdctmgr.c" lastModified="14e8ca115f5">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_scsi.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MULTIPAGE.h" lastModified="14e9169aad8">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWinLibrary522\win.h" lastModified="15052f43763">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\FRAMEWIN.h" lastModified="14e9169972c">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\list.h" lastModified="15056d307f9">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\IMAGE.h" lastModified="14e9169aaa4">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_scsi.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_bot.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_scsi.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_mem.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_data.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\GUI_X_FreeRTOS.c" lastModified="151c6db8507">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\semphr.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWinLibrary522\win.c" lastModified="150581009c6">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+         <include file="..\..\..\..\..\..\STemWinLibrary522\win.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="14f9f734f53">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_pwr.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rng.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rtc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis\core_cm4.h" lastModified="14f9f732c78">
+         <include file="..\..\..\..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_hcs.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_scsi.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_bot.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jquant2.c" lastModified="14e8ca11dd1">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis\core_cmFunc.h" lastModified="14f9f733089">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h" lastModified="14e9169aab2">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Type.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM_GUI.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\nokia_LCD\itoa.h" lastModified="14c3d09afb8">
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdmainct.c" lastModified="14e8ca11f9a">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\FreeRTOSConfig.h" lastModified="152089ff977">
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_scsi.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_bot.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\misc.c" lastModified="14f9f80b78a">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_req.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcmaster.c" lastModified="14e8ca116a0">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\nokia_LCD\itoa.c" lastModified="14c3d11fc38">
+         <include file="..\..\..\..\..\..\nokia_LCD\itoa.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\jpeg\tjpgd.h" lastModified="14f44cf6c42">
+         <include file="..\..\..\..\..\..\ff\integer.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h" lastModified="14e9169aaec">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SCROLLBAR.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_req.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_req.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_desc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_flash.h" lastModified="14f9f767070">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Type.h" lastModified="14e9169aa47">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD.h"/>
+         <include file="..\..\..\..\..\..\STemWin\Config\GUIConf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\jpeg\tjpgd.c" lastModified="14f315e89a4">
+         <include file="..\..\..\..\..\..\jpeg\tjpgd.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h" lastModified="150ec8a81a6">
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_defines.h" lastModified="14f3c4c713d">
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rng.h" lastModified="150c9ad097b">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jmemmgr.c" lastModified="14e8ca11a91">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jmemsys.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jpegint.h" lastModified="14e8ca10159">
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\GUIConf.h" lastModified="151cbbda6c7">
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h" lastModified="143da084865">
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jconfig.h" lastModified="15039fabf97">
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jchuff.c" lastModified="14e8ca11680">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_defines.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_exti.h" lastModified="14f9f849220">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usb_conf.h" lastModified="150f5f7f135">
+         <include file="..\..\..\..\..\..\ff\sdio_stm32f4.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\explorer.h" lastModified="150c4c8304a">
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdhuff.c" lastModified="14e8ca1204e">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\explorer.c" lastModified="150c74a361a">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\itoa.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\..\..\..\list1.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+         <include file="..\..\..\..\..\..\explorer.h"/>
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+         <include file="..\..\..\..\..\..\elements\textbox.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_usr.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_desc.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\BUTTON.h" lastModified="14e91698043">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="14f9f736b3b">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\KNOB.h" lastModified="14e916996e3">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Debug.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CHOOSECOLOR.h" lastModified="14e9169804a">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\RADIO.h" lastModified="14e91699708">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h" lastModified="143da08444f">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MULTIEDIT.h" lastModified="14e916997a8">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcapistd.c" lastModified="14e8ca11a1e">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h" lastModified="14e9169aa6a">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Type.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Version.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\timers.c" lastModified="143da0841df">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\queue.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\timers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="14f9f7358e2">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="14f9f7623b8">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdatadst.c" lastModified="14e8ca11d7b">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jerror.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14f9f7327fb">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="15174153424">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\MemMang\heap_2.c" lastModified="143da08473e">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbd_usr.c" lastModified="14a0f652ea8">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_usr.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\OS\GUI_X.c" lastModified="151c6b24eda">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\ff.h" lastModified="14f899d061f">
+         <include file="..\..\..\..\..\..\ff\integer.h"/>
+         <include file="..\..\..\..\..\..\ff\ffconf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\touch\stmpe811.h" lastModified="151e398fada">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbd_desc.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\ff.c" lastModified="14f73216ac8">
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+         <include file="..\..\..\..\..\..\ff\diskio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_sdio.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_syscfg.h" lastModified="14f9f760783">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_core.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\touch\stmpe811.c" lastModified="151e428b60d">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\itoa.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+         <include file="..\..\..\..\..\..\elements\list1.h"/>
+         <include file="..\..\..\..\..\..\elements\textbox.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jaricom.c" lastModified="14e8ca11a7e">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbd_desc.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_desc.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_req.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_regs.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jerror.h" lastModified="14e8ca1015f">
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_core.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_mem.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_bot.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_req.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\Config\GUIDRV_Template.c" lastModified="151d04821cf">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_Private.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Private.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_ConfDefaults.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcmarker.c" lastModified="14e8ca120a5">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jerror.c" lastModified="14e8ca12167">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jversion.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jerror.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jerror.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jpeglib.h" lastModified="15039dbdc04">
+         <include file="..\..\..\..\..\..\libjpeg\jconfig.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jmorecfg.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpegint.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jerror.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h" lastModified="14f9f73a1a6">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MENU.h" lastModified="14e91697df5">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jddctmgr.c" lastModified="14e8ca11676">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdmerge.c" lastModified="14e8ca119ab">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD_ConfDefaults.h" lastModified="14e9169970e">
+         <include file="..\..\..\..\..\..\STemWin\Config\LCDConf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="14f9f812a19">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis\core_cm4_simd.h" lastModified="14f9f733068">
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h" lastModified="14f9f76482a">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdmaster.c" lastModified="14e8ca11960">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="14f9f849228">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_exti.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\main.h" lastModified="15039e7c9eb">
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\decode.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\diskio.h" lastModified="14b6e1c9d40">
+         <include file="..\..\..\..\..\..\ff\integer.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\list1.h" lastModified="150f71a995a">
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rtc.h" lastModified="14f9f82ccb0">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdct.h" lastModified="14e8ca1027d">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\ICONVIEW.h" lastModified="14e9169aa63">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcapimin.c" lastModified="14e8ca11e09">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\list1.c" lastModified="150c751d630">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\itoa.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\..\..\..\list1.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\LCDConf.h" lastModified="14e91692a00">
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_bot.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdatasrc.c" lastModified="150438cd9ab">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jerror.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jctrans.c" lastModified="14e8ca11a97">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\ccsbcs.c" lastModified="14f7590f8a1">
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LCD.h" lastModified="14e9169803c">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\Global.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\LCDConf.c" lastModified="151e5933f31">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+         <include file="..\..\..\..\..\..\STemWin\Config\GUIDRV_Template.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\StackMacros.h" lastModified="143da083f12">
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_bot.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_bot.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_scsi.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_mem.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="14f9f7382ff">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\stm32f4xx_it.h" lastModified="1505cffef51">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\tasks.c" lastModified="143da084e43">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\timers.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\StackMacros.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\port_cm4.c" lastModified="143da0846bf">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\stm32f4xx_it.c" lastModified="151c68c27b1">
+         <include file="..\..\..\..\..\..\stm32f4xx_it.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd_int.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\PROGBAR.h" lastModified="14e91699796">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jfdctfst.c" lastModified="14e8ca1169c">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="14f9f8333d8">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_pwr.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CALENDAR.h" lastModified="14e91698017">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\Config\GUIConf.c" lastModified="1520838d6c7">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\queue.h" lastModified="143da084088">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jidctfst.c" lastModified="14e8ca11965">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h" lastModified="151c077aa45">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jmorecfg.h" lastModified="150440684c1">
+      </source>
+      <source file="..\..\..\..\..\..\ff\ffconf.h" lastModified="14f766a6ea3">
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcarith.c" lastModified="14e8ca120b3">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="14f9f767073">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_flash.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\nokia_LCD\LCD_6300.c" lastModified="151c1711832">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\FONT8x8.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\mpu_wrappers.h" lastModified="143da084069">
+      </source>
+      <source file="..\..\..\..\..\..\sram\sram.h" lastModified="151c12dea00">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\main.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_dma.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\list.c" lastModified="150f7030762">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\list.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\ff\integer.h" lastModified="14b6e1ca510">
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdpostct.c" lastModified="14e8ca120e6">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_req.h"/>
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd_int.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jquant1.c" lastModified="14e8ca11d5a">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\CHECKBOX.h" lastModified="14e91699778">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\sram\sram.c" lastModified="151c576b54b">
+         <include file="..\..\..\..\..\..\sram\sram.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdapistd.c" lastModified="14e8ca11a22">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\projdefs.h" lastModified="143da083f9e">
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_regs.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jfdctint.c" lastModified="14e8ca11c77">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbh_msc_usr.h" lastModified="14a0f652ea8">
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTWHEEL.h" lastModified="14e9169805d">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jidctint.c" lastModified="14e8ca11fa6">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_rng.c" lastModified="150c9ad0981">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rng.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbh_msc_usr.c" lastModified="14a0f652ea8">
+         <include file="..\..\..\..\..\..\USB\DRD\usbh_msc_usr.h"/>
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jmemnobs.c" lastModified="14e8ca1196a">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jmemsys.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\croutine.c" lastModified="143da084a87">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\croutine.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_ConfDefaults.h" lastModified="14e9169aae5">
+         <include file="..\..\..\..\..\..\STemWin\Config\GUIConf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\nokia_LCD\FONT8x8.h" lastModified="15039c8b0f5">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jinclude.h" lastModified="15043f14c8d">
+         <include file="..\..\..\..\..\..\libjpeg\jconfig.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM_Intern.h" lastModified="14e91698063">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Private.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_fsmc.c" lastModified="14f9f73a1aa">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcparam.c" lastModified="14e8ca11ffe">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbd_conf.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbh_conf.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\STemWin\Config\GUIDRV_Template.h" lastModified="14e916929f4">
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h" lastModified="143da0846fe">
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_bot.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcsample.c" lastModified="14e8ca11e11">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_hcs.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbh_msc_usr.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h" lastModified="143da084681">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\TREEVIEW.h" lastModified="14e91698056">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_bot.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_scsi.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_bot.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="14f9f736b35">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jccoefct.c" lastModified="14e8ca11a4f">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcprepct.c" lastModified="14e8ca11c66">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdmarker.c" lastModified="14e8ca11dc6">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jccolor.c" lastModified="14e8ca11a86">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\apps\bar.h" lastModified="151e5b2ace5">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GRAPH.h" lastModified="14e916997d2">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_dcd.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTBOX.h" lastModified="14e91698050">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\elements\button.h" lastModified="15028db3454">
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\apps\bar.c" lastModified="15202d01890">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+         <include file="..\..\..\..\..\..\apps\bar.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="14f9f7358f0">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_hcs.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\elements\button.c" lastModified="14ff6e71692">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\itoa.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\..\..\..\elements\button.h"/>
+         <include file="..\..\..\..\..\..\touch\stmpe811.h"/>
+         <include file="..\..\..\..\..\..\nokia_LCD\LCD_6300.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_usr.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdtrans.c" lastModified="14e8ca11a41">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_scsi.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_stdreq.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\decode.h" lastModified="151d0badaa2">
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_hcs.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_hcs.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_msc_mem.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DEVICE_lib\usbd_def.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\HEADER.h" lastModified="14e91698003">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14f9f738302">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="14f9f7327f5">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SPINBOX.h" lastModified="14e91699758">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Debug.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\EDIT.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\misc.h" lastModified="14f9f80b77e">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_scsi.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_scsi.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_bot.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_ioreq.h"/>
+         <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\decode.c" lastModified="151d4886f3a">
+         <include file="..\..\..\..\..\..\libjpeg\decode.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jmorecfg.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_otg.h" lastModified="14a0f652ac0">
+      </source>
+      <source file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="15174153420">
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usbh_conf.h" lastModified="14a0f652ac0">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\Global.h" lastModified="14e91699715">
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_otg.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_defines.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_regs.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_otg.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdinput.c" lastModified="14e8ca11b0a">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\portable.h" lastModified="143da08f87e">
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\IAR\ARM_CM3\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\portable\GCC\ARM_CM4F\portmacro.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\mpu_wrappers.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdapimin.c" lastModified="14e8ca11fa0">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcomapi.c" lastModified="14e8ca119c3">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jmemsys.h" lastModified="14e8ca1066e">
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\LISTVIEW.h" lastModified="14e916997d9">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\ICONVIEW.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\HEADER.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jversion.h" lastModified="14e8ca100d7">
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jcmainct.c" lastModified="14e8ca11c6a">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\jpeg\bsp_jpg.h" lastModified="150530fd536">
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_fsmc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\..\..\..\jpeg\bsp_jpg.h"/>
+         <include file="..\..\..\..\..\..\jpeg\tjpgd.h"/>
+         <include file="..\..\..\..\..\..\ff\ff.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Debug.h" lastModified="14e91698414">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jdarith.c" lastModified="14e8ca11b0e">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\jpeg\bsp_jpg.c" lastModified="150533392cf">
+         <include file="..\..\..\..\..\..\jpeg\bsp_jpg.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\DRD\usb_bsp.c" lastModified="150f6097d41">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+         <include file="..\..\..\..\..\..\USB\DRD\usbd_conf.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_tim.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\misc.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\TEXT.h" lastModified="14e9169976a">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Debug.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_regs.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_defines.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\USB\OTG_driver\usb_core.c" lastModified="14a0f652ac0">
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_core.h"/>
+         <include file="..\..\..\..\..\..\USB\OTG_driver\usb_bsp.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jutils.c" lastModified="14e8ca11d50">
+         <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
+         <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
+      </source>
+   </includePath>
+</dependencies>
