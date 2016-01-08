@@ -50,7 +50,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
   { WINDOW_CreateIndirect, "Window", ID_WINDOW_2, 0, 0, 320, 60, 0, 0x0, 0 },
   { PROGBAR_CreateIndirect, "Progbar", ID_PROGBAR_2, 263, 7, 46, 15, 0, 0x0, 0 },
   { TEXT_CreateIndirect, "16:20", ID_TEXT_2, 141, 6, 50, 20, 0, 0x0, 0 },
-  { BUTTON_CreateIndirect, "<<", ID_BACK, 10, 7, 50, 40, 0, 0x0, 0 },
+  { BUTTON_CreateIndirect, "<<", ID_BACK, 8, 7, 50, 70, 0, 0x0, 0 },
   // USER START (Optionally insert additional widgets)
   // USER END
 };

@@ -101,7 +101,6 @@ static void Menu(void *pvParameters);
 
 
 
-
 #define RECOMMENDED_MEMORY (1024L * 200)
 
 
@@ -1840,7 +1839,7 @@ static void _cbHeading(WM_MESSAGE * pMsg) {
     //
     // Create timer to be used to modify the battery symbol
     //
-	hButton=BUTTON_CreateEx(10,20,30,40,hWin,WM_CF_SHOW,0,(GUI_ID_USER + 0x18));
+	hButton=BUTTON_CreateEx(10,15,50,40,hWin,WM_CF_SHOW,0,(GUI_ID_USER + 0x18));
     WM_CreateTimer(hWin, 0, 1000, 0);
     break;
   case WM_TIMER:
@@ -1862,8 +1861,11 @@ static void _cbHeading(WM_MESSAGE * pMsg) {
      {
 		 case WM_NOTIFICATION_CLICKED:
 		 {
-			 GUI_Clear();
-			 xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 2,&Menu_Handle);
+//			 GUI_Clear();
+			 xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
+			 vTaskDelete(MP3_Handle);
+//			 vTraceUserEvent(xTraceOpenLabel("KONIEC"));
+//			 vTraceStop();
 			 break;
 		 }
      }
@@ -1931,7 +1933,9 @@ static void _cbSelected(WM_MESSAGE * pMsg)
 
 		if(Index==2)
 		{
-			 xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 3,&MP3_Handle);
+			xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 6,&MP3_Handle);
+			vTraceUserEvent(xTraceOpenLabel("START"));
+			vTaskDelete(Menu_Handle);
 			 Index=-1;
 		}
 
@@ -1968,9 +1972,9 @@ static void _CreateSelected(int Index, WM_HWIN hWin)
   //
   // Window animation
 //
-  GUI_MEMDEV_ShiftOutWindow(hWinBase, 500, GUI_MEMDEV_EDGE_LEFT);
-  GUI_Delay(500);
-  GUI_MEMDEV_ShiftInWindow(hWinBase, 500, GUI_MEMDEV_EDGE_LEFT);
+  GUI_MEMDEV_ShiftOutWindow(hWinBase, 1500, GUI_MEMDEV_EDGE_LEFT);
+  GUI_Delay(1500);
+  GUI_MEMDEV_ShiftInWindow(hWinBase, 1500, GUI_MEMDEV_EDGE_LEFT);
   //
   // Remove the new window
   //
@@ -2037,7 +2041,8 @@ static void _cbMenu(WM_MESSAGE * pMsg)
     // Create all buttons
     //
     xSize = WM_GetWindowSizeX(hWin);
-    for (i = 0; (unsigned)i <= GUI_COUNTOF(_aMenu); i++) {
+    for (i = 0; (unsigned)i < GUI_COUNTOF(_aMenu); i++)
+    {
       hButton = BUTTON_CreateUser(0, i * 60, xSize, 60, hWin, WM_CF_SHOW, 0, GUI_ID_BUTTON0 + i, sizeof(i));
       BUTTON_SetSkin(hButton, _ButtonSkin);
       BUTTON_SetUserData(hButton, &i, sizeof(i));
@@ -2062,6 +2067,12 @@ static void _cbDummy(WM_MESSAGE * pMsg) {
   }
 }
 
+static void _cbDummy1(WM_MESSAGE * pMsg) {
+  switch (pMsg->MsgId) {
+  default:
+    WM_DefaultProc(pMsg);
+  }
+}
 
 
 
@@ -2070,9 +2081,9 @@ static void _cbDummy(WM_MESSAGE * pMsg) {
 
 
 
-WM_HWIN hWinBase;     // Parent window for heading and viewport
+//WM_HWIN hWinBase;     // Parent window for heading and viewport
 
-uint8_t buffer[512]__attribute((section(".ExRam")));
+uint8_t buffer[1024]__attribute((section(".ExRam")));
 uint8_t pagebuff[2340]__attribute((section(".ExRam")));
 char name[107]__attribute((section(".ExRam")));
 u8 rand[250]__attribute((section(".ExRam")));
@@ -2104,6 +2115,7 @@ int main(void)
 		  USBD_Init(&USB_OTG_Core,USB_OTG_FS_CORE_ID,&USR_desc,&USBD_MSC_cb,&USR_cb);
 		  while(1);
 	  }
+	  vTraceInitTraceData();
 
 //
 	  WM_SetCreateFlags(WM_CF_MEMDEV);
@@ -2196,9 +2208,6 @@ int main(void)
 //	  play_video("avifiles/birds_small2.avi");
 
 
-
-
-
 	GPIO_InitTypeDef gpio;
 	ADC_InitTypeDef adc;
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_ADC1, ENABLE);
@@ -2210,10 +2219,13 @@ int main(void)
 	ADC1_Configuration();
 
 
-//	  xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 2,&MP3_Handle);
-	  xTaskCreate(Background_Task,(char const*)"BK_GND",2048,NULL,tskIDLE_PRIORITY + 3,&Task_Handle);
-	  xTaskCreate(Heading_Task,(char const*)"GUI_DEMO",2048,NULL,tskIDLE_PRIORITY  + 4,&Heading_Handle);
-	  xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 3,&Menu_Handle);
+
+
+
+	  xTaskCreate(Background_Task,(char const*)"Background",2048,NULL,tskIDLE_PRIORITY + 7,&Task_Handle);
+	  xTaskCreate(Heading_Task,(char const*)"Heading",1024,NULL,tskIDLE_PRIORITY  + 6,&Heading_Handle);
+//	  xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 6,&MP3_Handle);
+	  xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
 	  TouchScreenTimer = xTimerCreate ("Timer",60, pdTRUE,( void * ) 1, vTimerCallback);
 
 	  if( TouchScreenTimer != NULL )
@@ -2223,7 +2235,6 @@ int main(void)
 
 	     }
 	  }
-
 	    vTaskStartScheduler();
 }
 
@@ -2232,8 +2243,9 @@ void Heading_Task( void * pvParameters)
 	portTickType xLastFlashTime;
 	xLastFlashTime = xTaskGetTickCount();
 
-	WM_HWIN hWinHeading;  // Heading window
-	hWinBase     = WM_CreateWindow(0,  0, 320, 240,  WM_CF_SHOW, _cbDummy, 0);
+	WM_HWIN hWinHeading;
+	WM_HWIN hWinBase;     // Heading window
+	hWinBase     = WM_CreateWindow(0,  0, 320, 60,  WM_CF_SHOW, _cbDummy1, 0);
 	hWinHeading  = WM_CreateWindowAsChild(0,  0, 320, 60, hWinBase,     WM_CF_SHOW, _cbHeading, 0);
 
 	WM_HWIN hItem,hText;
@@ -2241,7 +2253,8 @@ void Heading_Task( void * pvParameters)
 
 	while(1)
 	{
-		vTaskDelayUntil(&xLastFlashTime, 100/portTICK_RATE_MS);
+//		vTaskDelayUntil(&xLastFlashTime, 100/portTICK_RATE_MS);
+		vTaskDelay(100);
 //		hWinHeading  = WM_CreateWindowAsChild(0,  0, 320, 60, hWinBase,     WM_CF_SHOW, _cbHeading, 0);
 
 		WM_Paint(hWinHeading);
@@ -2251,14 +2264,15 @@ void Heading_Task( void * pvParameters)
 
 //		taskENTER_CRITICAL();
 //
-//	    hButton3 = WM_GetDialogItem(hWinHeading, ID_BACK);
+	    hButton3 = WM_GetDialogItem(hWinHeading, ID_BACK);
 //
-//		if(BUTTON_IsPressed(hButton3))
-//		{
-//			while(BUTTON_IsPressed(hButton3)){};
-//			xTaskCreate(Menu,(char const*)"Menu",2048,NULL,tskIDLE_PRIORITY + 2,&Menu_Handle);
-//			vTaskDelete(MP3_Handle);
-//		}
+		if(BUTTON_IsPressed(hButton3))
+		{
+			while(BUTTON_IsPressed(hButton3)){};
+			xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
+			vTaskDelete(MP3_Handle);
+			GUI_Clear();
+		}
 //
 //	    ADC_SoftwareStartConv(ADC1);
 //	    while(ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) == RESET);
@@ -2279,32 +2293,34 @@ static void Menu(void *pvParameters)
 	  int xSize, ySize;
 	  WM_HWIN hWinViewport; // Viewport window
 	  WM_HWIN hWinMenu;     // Menu window moveable within viewport window
+	  WM_HWIN hWinBase;
 
 	  xSize = LCD_GetXSize();
 	  ySize = LCD_GetYSize();
 	  WM_SetSize(WM_HBKWIN, xSize, ySize);
 	  WM_HWIN hButton;
 
-	  //
-	  // Create windows
-	  //
-//	  hWinBase     = WM_CreateWindow(0,  0, 320, 240,  WM_CF_SHOW, _cbDummy, 0);
+	  hWinBase     = WM_CreateWindow(0,  60, 320, 240,  WM_CF_SHOW, _cbDummy, 0);
 	  hWinViewport = WM_CreateWindowAsChild(0, 60, xSize, ySize - 60,               hWinBase,     WM_CF_SHOW, _cbDummy, 0);
 	  hWinMenu     = WM_CreateWindowAsChild(0,  0, xSize, 60 * GUI_COUNTOF(_aMenu), hWinViewport, WM_CF_SHOW | WM_CF_MOTION_Y, _cbMenu, 0);
-//	  vTaskDelete(MP3_Handle);
+
+
 
 	while(1)
 	{
-//		vTaskDelayUntil(&xLastFlashTime, 200/portTICK_RATE_MS);
-//		GUI_Exec();
+//		vTaskDelayUntil(&xLastFlashTime, 50/portTICK_RATE_MS);
+//		vTaskDelay(100);
+		GUI_Exec();
 
-//		hButton = WM_GetDialogItem(hWinMenu, GUI_ID_BUTTON0 + 9);
-//
-//		if(BUTTON_IsPressed(hButton))
-//		{
-//
-//
-//		}
+		hButton = WM_GetDialogItem(hWinMenu, GUI_ID_BUTTON0 + 2);
+
+		if(BUTTON_IsPressed(hButton))
+		{
+//			uiTraceStart();
+//			xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 6,&MP3_Handle);
+//			vTraceUserEvent(xTraceOpenLabel("START"));
+//			vTaskDelete(NULL);
+		}
 	}
 }
 
@@ -2322,11 +2338,11 @@ static void Background_Task(void * pvParameters)
 
   while(1)
   {
-	  vTaskDelayUntil(&xLastFlashTime, 100/portTICK_RATE_MS);
+//	  vTaskDelayUntil(&xLastFlashTime, 250/portTICK_RATE_MS);
+//	  vTaskDelay(50);
+	  GUI_Delay(50);
+//	  GUI_Exec();
 
-	  GUI_Exec(); /* Do the background work ... Update windows etc.) */
-//	  GUI_Delay(250);
-	  GUI_X_ExecIdle();
   }
 }
 
@@ -2343,10 +2359,7 @@ static void MP3_player(void *pvParameters)
 	FIL fsrc;
 	DIR dir;
 	FATFS fs;
-//	FILINFO fno;
-
-//	vTaskDelay(100);
-	vTaskDelete(Menu_Handle);
+	FILINFO fno;
 
 	taskENTER_CRITICAL();
 
@@ -2403,7 +2416,8 @@ static void MP3_player(void *pvParameters)
 	while(1)
 	{
 
-		vTaskDelayUntil(&xLastFlashTime, 50/portTICK_RATE_MS);
+//		vTaskDelayUntil(&xLastFlashTime, 50/portTICK_RATE_MS);
+		vTaskDelay(40);
 
 //		hText1 = WM_GetDialogItem(hWin, ID_TEXT_1);
 		hText = WM_GetDialogItem(hWin, ID_TEXT_0);
@@ -2426,8 +2440,6 @@ static void MP3_player(void *pvParameters)
 		   if(f == 0)
 		   {
 			   vol=SLIDER_GetValue(hSlider);
-//			   bass=SLIDER_GetValue(hSlider1);
-//			   taskENTER_CRITICAL();
 
 			   SDI_ChipSelect(SET);
 			   for (int i=0;i<br;i++)
@@ -2478,8 +2490,12 @@ static void MP3_player(void *pvParameters)
 		if(BUTTON_IsPressed(hButton2))
 		{
 			while(BUTTON_IsPressed(hButton2)){};
-			xTaskCreate(Menu,(char const*)"Menu",2048,NULL,tskIDLE_PRIORITY + 3,&Menu_Handle);
+//			uiTraceStart();
+//			vTaskDelete(Heading_Handle);
+//			xTaskCreate(Heading_Task,(char const*)"Heading",1024,NULL,tskIDLE_PRIORITY  + 6,&Heading_Handle);
+			xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
 			vTaskDelete(MP3_Handle);
+
 		}
 		if(BUTTON_IsPressed(hButton1))
 		{
@@ -2692,6 +2708,8 @@ void RCC_cfg(void)
 
 void NVIC_Config(void)
 {
+
+	NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
 //	NVIC_EnableIRQ(DMA2_Stream5_IRQn);
 //	NVIC_EnableIRQ(TIM3_IRQn);
 }
@@ -2967,7 +2985,9 @@ u8 play_video(char *sc)
 void vApplicationMallocFailedHook( void )
 {
   while (1)
-  {}
+  {
+
+  }
 }
 void vApplicationIdleHook(void)
 {
@@ -2990,7 +3010,6 @@ void vApplicationIdleHook(void)
 }
 //	  USBD_Init(&USB_OTG_Core,USB_OTG_FS_CORE_ID,&USR_desc,&USBD_MSC_cb,&USR_cb);
 //	  while(1){};
-
 
 
 
