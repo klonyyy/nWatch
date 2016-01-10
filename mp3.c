@@ -24,31 +24,12 @@
 #include "DIALOG.h"
 #include "mp3.h"
 
-/*********************************************************************
-*
-*       Defines
-*
-**********************************************************************
-*/
+
+char name[107]__attribute((section(".ExRam")));
+u8 rand[250]__attribute((section(".ExRam")));
+u8 buffer[1024]__attribute((section(".ExRam")));
 
 
-// USER START (Optionally insert additional defines)
-// USER END
-
-/*********************************************************************
-*
-*       Static data
-*
-**********************************************************************
-*/
-
-// USER START (Optionally insert additional static data)
-// USER END
-
-/*********************************************************************
-*
-*       _aDialogCreate
-*/
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] =
 {
 		  { WINDOW_CreateIndirect, "Window", ID_WINDOW_0, 0, 60, 320, 180, 0, 0x0, 0 },
@@ -199,5 +180,229 @@ WM_HWIN CreateWindow(void)
 
 // USER START (Optionally insert additional public code)
 // USER END
+void MP3_player(void *pvParameters)
+{
+	portTickType xLastFlashTime;
+	xLastFlashTime = xTaskGetTickCount();
+	u16 br=0;
+	u8 fin=1;
+	u8 play=0;
+	u8 rd=0;
+	FRESULT f;
+	int size=0,co=0,vol=0x4a,on=1;
+	int next=0;
+	FIL fsrc;
+	DIR dir;
+	FATFS fs;
+	FILINFO fno;
 
-/*************************** End of file ****************************/
+//	vTaskDelay(10);
+
+	taskENTER_CRITICAL();
+
+	f=f_mount(&fs,"",0);
+	f=f_opendir(&dir,"0:music");
+
+	fno.lfname = lfname;
+	fno.lfsize = _MAX_LFN;
+
+	while(!f_readdir(&dir, &fno) && fno.fname[0])
+	{
+		co++;
+	}
+	rd=co;
+
+	while(rd--)
+	{
+		int k=get_random(0,co);
+
+		for(int j=0;j<co-1;j++)
+		{
+			if(k==rand[j])br=1;
+		}
+		if(br==0)rand[rd]=k;
+		else
+		{
+			br=0;
+			rd++;
+		}
+	}
+
+	br=0;
+	rd=0;
+
+	taskEXIT_CRITICAL();
+
+	GUI_SetFont(GUI_FONT_COMIC18B_ASCII);
+	WM_HWIN hWin=CreateWindow();
+	WM_HWIN hText,hText1;
+	WM_HWIN hSlider;
+	WM_HWIN hProgBar;
+	WM_HWIN hButton,hButton1,hButton2;
+
+	name[0]='m';
+	name[1]='u';
+	name[2]='s';
+	name[3]='i';
+	name[4]='c';
+	name[5]='/';
+
+
+
+	while(1)
+	{
+
+
+
+//		hText1 = WM_GetDialogItem(hWin, ID_TEXT_1);
+		hText = WM_GetDialogItem(hWin, ID_TEXT_0);
+		hSlider = WM_GetDialogItem(hWin, ID_SLIDER_0);
+//		hSlider1 = WM_GetDialogItem(hWin, ID_SLIDER_1);
+		hProgBar = WM_GetDialogItem(hWin, ID_PROGBAR_0);
+		hButton = WM_GetDialogItem(hWin, ID_BUTTON_0);
+		hButton1 = WM_GetDialogItem(hWin, ID_BUTTON_1);
+		hButton2 = WM_GetDialogItem(hWin, ID_BUTTON_2);
+
+		if(play==1)
+		{
+			SCI_ChipSelect(RESET);
+			taskENTER_CRITICAL();
+			f=f_read(&fsrc, buffer, sizeof(buffer), &br);
+
+			   if(f == 0)
+			   {
+				   vol=SLIDER_GetValue(hSlider);
+
+				   SDI_ChipSelect(SET);
+				   for (int i=0;i<br;i++)
+				   {
+						 SPIPutChar(buffer[i]);
+						 while(DREQ);
+				   }
+				   SDI_ChipSelect(RESET);
+				   Mp3SetVolume(vol, vol);
+
+				   if(br<sizeof(buffer))
+				   {
+					   fin=1;
+				   }
+			   }
+			   Mp3SoftReset();
+
+			 int dec1=size/(VS1003_GetBitrate()*1000/8);
+			 u16 dec=Mp3ReadRegister(SPI_DECODE_TIME);
+			 PROGBAR_SetValue(hProgBar, dec*100/dec1 );
+			 taskEXIT_CRITICAL();
+		}
+
+		if(button)
+		{
+			while(button){};
+			if(on==1)
+			{
+				GPIOB->BSRRL|=GPIO_BSRR_BS_9;
+//				vTaskSuspend(TouchScreenTimer);
+				on=0;
+			}
+			else
+			{
+				GPIOB->BSRRH|=GPIO_BSRR_BS_9;
+//				vTaskResume(TouchScreenTimer);
+				LCD_init();
+				on=1;
+			}
+
+	    }
+
+		if(BUTTON_IsPressed(hButton))
+		{
+			while(BUTTON_IsPressed(hButton)){};
+			fin=1;
+		}
+		if(BUTTON_IsPressed(hButton2))
+		{
+			while(BUTTON_IsPressed(hButton2)){};
+			if(play==1)play=0;
+			else play=1;
+		}
+		if(BUTTON_IsPressed(hButton1))
+		{
+			while(BUTTON_IsPressed(hButton1)){};
+			fin=1;
+			next-=2;
+		}
+//
+
+		if(fin==1)
+		{
+
+			taskENTER_CRITICAL();
+
+			next++;
+
+			if(next==co)
+			{
+				next=0;
+			}
+//
+				fno.lfname = lfname;
+				fno.lfsize = _MAX_LFN;
+
+				for(u8 k=6;k<106;k++)
+				{
+					name[k]=0;
+				}
+
+
+				f_opendir(&dir,"0:music");
+
+				rd=0;
+
+				while(rd!=rand[next])
+				{
+					f_readdir(&dir, &fno);
+					rd++;
+				}
+
+
+
+				if(!f_readdir(&dir, &fno) && fno.fname[0])
+				{
+					taskEXIT_CRITICAL();
+					int b=sizeof(fno.fname);
+					int h=6;
+
+					if(*fno.lfname!=0)
+					{
+						while(*fno.lfname != 0)
+						{
+							name[h]=*fno.lfname;
+							fno.lfname++;
+							h++;
+						}
+					}
+					else
+					{
+						for(int j=6;j<b+6;j++)
+						{
+							name[j]=fno.fname[j-6];
+						}
+					}
+				}
+
+			Mp3Reset();
+			taskENTER_CRITICAL();
+			f_open(&fsrc,name,FA_READ | FA_OPEN_EXISTING);
+			size=f_size(&fsrc);
+			taskEXIT_CRITICAL();
+//
+			TEXT_SetText(hText,&name[6]);
+			fin=0;
+//			vTaskResume(Heading_Handle);
+		}
+
+		vTaskDelay(40);
+
+	}
+
+}

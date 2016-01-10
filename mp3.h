@@ -2,6 +2,7 @@
 #define _MP3_H
 
 #include "DIALOG.h"
+#include "global_inc.h"
 
 #define ID_WINDOW_0 (GUI_ID_USER + 0x04)
 #define ID_BUTTON_0 (GUI_ID_USER + 0x08)
@@ -15,5 +16,6 @@
 
 WM_HWIN CreateWindow(void);
 static void _cbDialog(WM_MESSAGE * pMsg);
+void MP3_player(void *pvParameters);
 
 #endif

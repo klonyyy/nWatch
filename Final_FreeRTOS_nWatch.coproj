@@ -107,26 +107,29 @@
     <File name="STEMWIN/GUI_BMP_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_BMP_Private.h" type="1"/>
     <File name="USB/usb_bsp.h" path="USB/OTG_driver/usb_bsp.h" type="1"/>
     <File name="USB/usbd_msc_bot.c" path="USB/DEVICE_lib/usbd_msc_bot.c" type="1"/>
-    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="menu.c" path="menu.c" type="1"/>
     <File name="elements/list1.h" path="list1.h" type="1"/>
-    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="nokia_lcd/itoa.h" path="nokia_LCD/itoa.h" type="1"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="STEMWIN/global_includes.h" path="STemWin/Config/global_includes.h" type="1"/>
-    <File name="USB/usbh_core.h" path="USB/HOST_lib/usbh_core.h" type="1"/>
     <File name="STEMWIN/GUIDRV_TemplateI.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUIDRV_TemplateI.h" type="1"/>
+    <File name="USB/usbh_core.h" path="USB/HOST_lib/usbh_core.h" type="1"/>
     <File name="STEMWIN/LISTVIEW.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LISTVIEW.h" type="1"/>
     <File name="STEMWIN/GUIDRV_TemplateI_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUIDRV_TemplateI_Private.h" type="1"/>
+    <File name="main.h" path="main.h" type="1"/>
     <File name="STEMWIN/CHECKBOX_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/CHECKBOX_Private.h" type="1"/>
     <File name="elements" path="" type="2"/>
     <File name="STEMWIN/GUI.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI.h" type="1"/>
     <File name="STEMWIN/GUI_SIM_Win32.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_SIM_Win32.h" type="1"/>
-    <File name="FreeRTOS/FreeRTOSConfig.h" path="FreeRTOS/Source/include/FreeRTOSConfig_template.h" type="1"/>
     <File name="FreeRTOS/core/tasks.c" path="FreeRTOS/Source/tasks.c" type="1"/>
+    <File name="FreeRTOS/FreeRTOSConfig.h" path="FreeRTOS/Source/include/FreeRTOSConfig_template.h" type="1"/>
     <File name="sram" path="" type="2"/>
     <File name="USB/usbd_ioreq.c" path="USB/DEVICE_lib/usbd_ioreq.c" type="1"/>
     <File name="USB/usbh_msc_core.h" path="USB/HOST_lib/usbh_msc_core.h" type="1"/>
     <File name="libjpeg/decode.h" path="libjpeg/decode.h" type="1"/>
     <File name="STEMWIN/KNOB_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/KNOB_Private.h" type="1"/>
+    <File name="menu.h" path="menu.h" type="1"/>
     <File name="STEMWIN/GUI_SetOrientationCX.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_SetOrientationCX.h" type="1"/>
     <File name="STEMWIN/HEADER_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/HEADER_Private.h" type="1"/>
     <File name="STEMWIN/GUI_VNC.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_VNC.h" type="1"/>
@@ -136,44 +139,44 @@
     <File name="STEMWIN/DROPDOWN.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/DROPDOWN.h" type="1"/>
     <File name="STEMWIN/LCD_Protected.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LCD_Protected.h" type="1"/>
     <File name="USB/usbd_msc_bot.h" path="USB/DEVICE_lib/usbd_msc_bot.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
     <File name="libjpeg/jpeglib.h" path="libjpeg/jpeglib.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
     <File name="tjpgdec/tjpgd.h" path="jpeg/tjpgd.h" type="1"/>
     <File name="libjpeg/jdmerge.c" path="libjpeg/jdmerge.c" type="1"/>
     <File name="STEMWIN/GUI_SPRITE_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_SPRITE_Private.h" type="1"/>
     <File name="STEMWIN/MENU.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MENU.h" type="1"/>
     <File name="FreeRTOS/core/list.c" path="FreeRTOS/Source/list.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="libjpeg/jdtrans.c" path="libjpeg/jdtrans.c" type="1"/>
     <File name="USB/usbd_storage_msd.c" path="USB/DRD/usbd_storage_msd.c" type="1"/>
     <File name="STEMWIN/WM_Intern.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/WM_Intern.h" type="1"/>
-    <File name="libjpeg/jdtrans.c" path="libjpeg/jdtrans.c" type="1"/>
     <File name="FreeRTOS/core" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_pwr.c" path="cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
     <File name="trace/trcKernel.c" path="GenericRecorderLibSrc/trcKernel.c" type="1"/>
     <File name="USB/usbd_msc_scsi.h" path="USB/DEVICE_lib/usbd_msc_scsi.h" type="1"/>
-    <File name="touch/stmpe811.h" path="touch/stmpe811.h" type="1"/>
     <File name="libjpeg/jcprepct.c" path="libjpeg/jcprepct.c" type="1"/>
+    <File name="touch/stmpe811.h" path="touch/stmpe811.h" type="1"/>
     <File name="USB/usb_hcd_int.c" path="USB/OTG_driver/usb_hcd_int.c" type="1"/>
-    <File name="ff/ff.h" path="ff/ff.h" type="1"/>
     <File name="STEMWIN/BUTTON_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/BUTTON_Private.h" type="1"/>
+    <File name="ff/ff.h" path="ff/ff.h" type="1"/>
     <File name="libjpeg/jcsample.c" path="libjpeg/jcsample.c" type="1"/>
     <File name="trace/trcBase.h" path="GenericRecorderLibSrc/Include/trcBase.h" type="1"/>
     <File name="USB/usb_conf.h" path="USB/DRD/usb_conf.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
     <File name="STEMWIN/EDIT.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/EDIT.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
     <File name="ff/ccsbcs.c" path="ff/ccsbcs.c" type="1"/>
     <File name="libjpeg/jfdctflt.c" path="libjpeg/jfdctflt.c" type="1"/>
     <File name="USB/usb_dcd_int.h" path="USB/OTG_driver/usb_dcd_int.h" type="1"/>
     <File name="trace/trcKernelPortFreeRTOS.c" path="GenericRecorderLibSrc/trcKernelPortFreeRTOS.c" type="1"/>
-    <File name="USB/usbh_ioreq.c" path="USB/HOST_lib/usbh_ioreq.c" type="1"/>
     <File name="libjpeg/jaricom.c" path="libjpeg/jaricom.c" type="1"/>
+    <File name="USB/usbh_ioreq.c" path="USB/HOST_lib/usbh_ioreq.c" type="1"/>
     <File name="cmsis_lib" path="" type="2"/>
     <File name="USB/usb_hcd_int.h" path="USB/OTG_driver/usb_hcd_int.h" type="1"/>
     <File name="nokia_lcd/LCD_6300.h" path="nokia_LCD/LCD_6300.h" type="1"/>
     <File name="touch/stmpe811.c" path="touch/stmpe811.c" type="1"/>
     <File name="USB/usbd_usr.h" path="USB/DEVICE_lib/usbd_usr.h" type="1"/>
-    <File name="libjpeg/jdcoefct.c" path="libjpeg/jdcoefct.c" type="1"/>
     <File name="USB/usbd_msc_data.c" path="USB/DEVICE_lib/usbd_msc_data.c" type="1"/>
+    <File name="libjpeg/jdcoefct.c" path="libjpeg/jdcoefct.c" type="1"/>
     <File name="libjpeg/jddctmgr.c" path="libjpeg/jddctmgr.c" type="1"/>
     <File name="STEMWIN/GUI_JPEG_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_JPEG_Private.h" type="1"/>
     <File name="trace/trcConfig.h" path="GenericRecorderLibSrc/ConfigurationTemplate/trcConfig.h" type="1"/>
@@ -181,14 +184,14 @@
     <File name="trace/trcKernel.h" path="GenericRecorderLibSrc/Include/trcKernel.h" type="1"/>
     <File name="libjpeg/jchuff.c" path="libjpeg/jchuff.c" type="1"/>
     <File name="STEMWIN/CHOOSECOLOR.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/CHOOSECOLOR.h" type="1"/>
-    <File name="STEMWIN/WINDOW_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/WINDOW_Private.h" type="1"/>
     <File name="USB/usb_regs.h" path="USB/OTG_driver/usb_regs.h" type="1"/>
+    <File name="STEMWIN/WINDOW_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/WINDOW_Private.h" type="1"/>
     <File name="USB/usbd_msc_scsi.c" path="USB/DEVICE_lib/usbd_msc_scsi.c" type="1"/>
     <File name="STEMWIN/GUI_X.c" path="STemWin/OS/GUI_X.c" type="1"/>
     <File name="elements/list1.c" path="list1.c" type="1"/>
     <File name="USB/usb_bsp.c" path="USB/DRD/usb_bsp.c" type="1"/>
-    <File name="STEMWIN/bsp.c" path="STemWin/Config/bsp.c" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
+    <File name="STEMWIN/bsp.c" path="STemWin/Config/bsp.c" type="1"/>
     <File name="elements/textbox.h" path="elements/textbox.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
@@ -203,20 +206,20 @@
     <File name="STEMWIN/ICONVIEW.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/ICONVIEW.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_fsmc.c" path="cmsis_lib/source/stm32f4xx_fsmc.c" type="1"/>
     <File name="USB/usb_dcd.c" path="USB/OTG_driver/usb_dcd.c" type="1"/>
-    <File name="STEMWIN/GUI_FontIntern.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_FontIntern.h" type="1"/>
     <File name="STEMWIN/GUI_HOOK.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_HOOK.h" type="1"/>
-    <File name="STEMWIN/GUI_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_Private.h" type="1"/>
     <File name="STEMWIN/WM.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/WM.h" type="1"/>
+    <File name="STEMWIN/GUI_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_Private.h" type="1"/>
+    <File name="STEMWIN/GUI_FontIntern.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_FontIntern.h" type="1"/>
     <File name="USB/usb_hcd.c" path="USB/OTG_driver/usb_hcd.c" type="1"/>
     <File name="libjpeg/jcparam.c" path="libjpeg/jcparam.c" type="1"/>
-    <File name="libjpeg/jdatadst.c" path="libjpeg/jdatadst.c" type="1"/>
     <File name="STEMWIN/LISTVIEW_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LISTVIEW_Private.h" type="1"/>
+    <File name="libjpeg/jdatadst.c" path="libjpeg/jdatadst.c" type="1"/>
     <File name="USB/usb_otg.h" path="USB/OTG_driver/usb_otg.h" type="1"/>
     <File name="tjpgdec/bsp_jpg.h" path="jpeg/bsp_jpg.h" type="1"/>
     <File name="STEMWIN/LCD_SIM.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LCD_SIM.h" type="1"/>
     <File name="USB/usbh_stdreq.h" path="USB/HOST_lib/usbh_stdreq.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
     <File name="trace/trcBase.c" path="GenericRecorderLibSrc/trcBase.c" type="1"/>
     <File name="USB/usb_otg.c" path="USB/OTG_driver/usb_otg.c" type="1"/>
     <File name="libjpeg/jfdctfst.c" path="libjpeg/jfdctfst.c" type="1"/>
@@ -233,9 +236,9 @@
     <File name="trace/trcUser.c" path="GenericRecorderLibSrc/trcUser.c" type="1"/>
     <File name="FreeRTOS/task.h" path="FreeRTOS/Source/include/task.h" type="1"/>
     <File name="USB/usbd_def.h" path="USB/DEVICE_lib/usbd_def.h" type="1"/>
-    <File name="USB/usbh_msc_scsi.h" path="USB/HOST_lib/usbh_msc_scsi.h" type="1"/>
     <File name="USB/usb_hcd.h" path="USB/OTG_driver/usb_hcd.h" type="1"/>
     <File name="FreeRTOS/mpu_wrappers.h" path="FreeRTOS/Source/include/mpu_wrappers.h" type="1"/>
+    <File name="USB/usbh_msc_scsi.h" path="USB/HOST_lib/usbh_msc_scsi.h" type="1"/>
     <File name="STEMWIN/GUIConf.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/Config/GUIConf.h" type="1"/>
     <File name="libjpeg/jdpostct.c" path="libjpeg/jdpostct.c" type="1"/>
     <File name="nokia_lcd/itoa.c" path="nokia_LCD/itoa.c" type="1"/>
@@ -252,13 +255,13 @@
     <File name="cmsis_lib/source/stm32f4xx_sdio.c" path="cmsis_lib/source/stm32f4xx_sdio.c" type="1"/>
     <File name="STEMWIN/ICONVIEW_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/ICONVIEW_Private.h" type="1"/>
     <File name="STEMWIN/GUIConf.c" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/Config/GUIConf.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
     <File name="STEMWIN/SPINBOX_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/SPINBOX_Private.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
     <File name="libjpeg/jdct.h" path="libjpeg/jdct.h" type="1"/>
-    <File name="libjpeg/jidctfst.c" path="libjpeg/jidctfst.c" type="1"/>
     <File name="libjpeg/jquant1.c" path="libjpeg/jquant1.c" type="1"/>
     <File name="STEMWIN" path="" type="2"/>
     <File name="FreeRTOS/timers.h" path="FreeRTOS/Source/include/timers.h" type="1"/>
+    <File name="libjpeg/jidctfst.c" path="libjpeg/jidctfst.c" type="1"/>
     <File name="libjpeg/jidctflt.c" path="libjpeg/jidctflt.c" type="1"/>
     <File name="libjpeg/jcarith.c" path="libjpeg/jcarith.c" type="1"/>
     <File name="libjpeg/decode.c" path="libjpeg/decode.c" type="1"/>
@@ -266,34 +269,35 @@
     <File name="trace/trcUser.h" path="GenericRecorderLibSrc/Include/trcUser.h" type="1"/>
     <File name="FreeRTOS/core/event_groups.c" path="FreeRTOS/Source/event_groups.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_rng.h" path="cmsis_lib/include/stm32f4xx_rng.h" type="1"/>
     <File name="libjpeg/jmemmgr.c" path="libjpeg/jmemmgr.c" type="1"/>
     <File name="STEMWIN/DIALOG_Intern.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/DIALOG_Intern.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_rng.h" path="cmsis_lib/include/stm32f4xx_rng.h" type="1"/>
+    <File name="global_inc.h" path="global_inc.h" type="1"/>
     <File name="STEMWIN/SCROLLBAR.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/SCROLLBAR.h" type="1"/>
     <File name="libjpeg/jfdctint.c" path="libjpeg/jfdctint.c" type="1"/>
     <File name="STEMWIN/MULTIPAGE.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MULTIPAGE.h" type="1"/>
     <File name="USB/usbd_ioreq.h" path="USB/DEVICE_lib/usbd_ioreq.h" type="1"/>
     <File name="USB/usbh_core.c" path="USB/HOST_lib/usbh_core.c" type="1"/>
-    <File name="FreeRTOS/portable" path="" type="2"/>
     <File name="nokia_lcd/FONT8x8.h" path="nokia_LCD/FONT8x8.h" type="1"/>
+    <File name="FreeRTOS/portable" path="" type="2"/>
     <File name="FreeRTOS/queue.h" path="FreeRTOS/Source/include/queue.h" type="1"/>
     <File name="STEMWIN/GUI_SetOrientation.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_SetOrientation.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_flash.h" path="cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
     <File name="STEMWIN/TEXT_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/TEXT_Private.h" type="1"/>
-    <File name="STEMWIN/EDIT_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/EDIT_Private.h" type="1"/>
     <File name="libjpeg/jmorecfg.h" path="libjpeg/jmorecfg.h" type="1"/>
+    <File name="STEMWIN/EDIT_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/EDIT_Private.h" type="1"/>
     <File name="my_win/win.h" path="STemWinLibrary522/win.h" type="1"/>
-    <File name="STEMWIN/MULTIPAGE_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MULTIPAGE_Private.h" type="1"/>
     <File name="sram/sram.c" path="sram/sram.c" type="1"/>
+    <File name="STEMWIN/MULTIPAGE_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MULTIPAGE_Private.h" type="1"/>
     <File name="mp3.c" path="mp3.c" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
     <File name="libjpeg/jerror.c" path="libjpeg/jerror.c" type="1"/>
-    <File name="FreeRTOS/portable/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" type="1"/>
     <File name="STEMWIN/LCDConf.c" path="STemWin/Config/LCDConf.c" type="1"/>
+    <File name="FreeRTOS/portable/portmacro.h" path="FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h" type="1"/>
     <File name="libjpeg/jdapimin.c" path="libjpeg/jdapimin.c" type="1"/>
-    <File name="STEMWIN/GUI_X_FreeRTOS.c" path="STemWin/Config/GUI_X_FreeRTOS.c" type="1"/>
     <File name="elements/explorer.h" path="explorer.h" type="1"/>
+    <File name="STEMWIN/GUI_X_FreeRTOS.c" path="STemWin/Config/GUI_X_FreeRTOS.c" type="1"/>
     <File name="ff/sdio_stm32f4.h" path="ff/sdio_stm32f4.h" type="1"/>
     <File name="my_win" path="" type="2"/>
     <File name="stm32f4xx_it.c" path="stm32f4xx_it.c" type="1"/>
@@ -303,52 +307,51 @@
     <File name="STEMWIN/CALENDAR.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/CALENDAR.h" type="1"/>
     <File name="USB/usbh_def.h" path="USB/HOST_lib/usbh_def.h" type="1"/>
     <File name="libjpeg/jcmainct.c" path="libjpeg/jcmainct.c" type="1"/>
-    <File name="win.h" path="STemWinLibrary522/win.h" type="1"/>
     <File name="libjpeg/jcomapi.c" path="libjpeg/jcomapi.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rtc.c" path="cmsis_lib/source/stm32f4xx_rtc.c" type="1"/>
-    <File name="elements/explorer.c" path="explorer.c" type="1"/>
-    <File name="USB" path="" type="2"/>
     <File name="STEMWIN/TREEVIEW_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/TREEVIEW_Private.h" type="1"/>
-    <File name="libjpeg/jdsample.c" path="libjpeg/jdsample.c" type="1"/>
+    <File name="USB" path="" type="2"/>
+    <File name="elements/explorer.c" path="explorer.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
+    <File name="libjpeg/jdsample.c" path="libjpeg/jdsample.c" type="1"/>
     <File name="STEMWIN/IMAGE.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/IMAGE.h" type="1"/>
     <File name="FreeRTOS/memory/heap_2.c" path="FreeRTOS/Source/portable/MemMang/heap_2.c" type="1"/>
     <File name="mp3.h" path="mp3.h" type="1"/>
-    <File name="libjpeg/jdmarker.c" path="libjpeg/jdmarker.c" type="1"/>
     <File name="STEMWIN/HEADER.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/HEADER.h" type="1"/>
+    <File name="libjpeg/jdmarker.c" path="libjpeg/jdmarker.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_pwr.h" path="cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
-    <File name="USB/usbd_conf.h" path="USB/DRD/usbd_conf.h" type="1"/>
     <File name="STEMWIN/TREEVIEW.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/TREEVIEW.h" type="1"/>
-    <File name="win.c" path="STemWinLibrary522/win.c" type="1"/>
+    <File name="USB/usbd_conf.h" path="USB/DRD/usbd_conf.h" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
-    <File name="USB/usbh_msc_bot.h" path="USB/HOST_lib/usbh_msc_bot.h" type="1"/>
     <File name="FreeRTOS/list.h" path="FreeRTOS/Source/include/list.h" type="1"/>
+    <File name="USB/usbh_msc_bot.h" path="USB/HOST_lib/usbh_msc_bot.h" type="1"/>
     <File name="USB/usbh_hcs.c" path="USB/HOST_lib/usbh_hcs.c" type="1"/>
     <File name="STEMWIN/SCROLLBAR_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/SCROLLBAR_Private.h" type="1"/>
-    <File name="USB/usbd_msc_core.h" path="USB/DEVICE_lib/usbd_msc_core.h" type="1"/>
     <File name="touch" path="" type="2"/>
+    <File name="USB/usbd_msc_core.h" path="USB/DEVICE_lib/usbd_msc_core.h" type="1"/>
     <File name="FreeRTOS/memory" path="" type="2"/>
     <File name="FreeRTOS/StackMacros.h" path="FreeRTOS/Source/include/StackMacros.h" type="1"/>
     <File name="STEMWIN/GUIDRV_Template.c" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/Config/GUIDRV_Template.c" type="1"/>
     <File name="libjpeg/jcapimin.c" path="libjpeg/jcapimin.c" type="1"/>
     <File name="my_win/win.c" path="STemWinLibrary522/win.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
-    <File name="USB/usbd_core.h" path="USB/DEVICE_lib/usbd_core.h" type="1"/>
     <File name="nokia_lcd/fonts.h" path="nokia_LCD/fonts.h" type="1"/>
     <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="USB/usbd_core.h" path="USB/DEVICE_lib/usbd_core.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rng.c" path="cmsis_lib/source/stm32f4xx_rng.c" type="1"/>
     <File name="STEMWIN/GUI_ARRAY_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_ARRAY_Private.h" type="1"/>
     <File name="STEMWIN/LISTBOX_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LISTBOX_Private.h" type="1"/>
     <File name="MP3/vs1003.h" path="vs1003.h" type="1"/>
     <File name="cmsis" path="" type="2"/>
     <File name="STEMWIN/RADIO.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/RADIO.h" type="1"/>
-    <File name="USB/usbd_msc_core.c" path="USB/DEVICE_lib/usbd_msc_core.c" type="1"/>
     <File name="STEMWIN/LCD_ConfDefaults.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LCD_ConfDefaults.h" type="1"/>
+    <File name="USB/usbd_msc_core.c" path="USB/DEVICE_lib/usbd_msc_core.c" type="1"/>
     <File name="libjpeg/jcinit.c" path="libjpeg/jcinit.c" type="1"/>
-    <File name="USB/usb_dcd.h" path="USB/OTG_driver/usb_dcd.h" type="1"/>
     <File name="libjpeg/jconfig.h" path="libjpeg/jconfig.h" type="1"/>
     <File name="FreeRTOS/portable/port.c" path="FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c" type="1"/>
+    <File name="USB/usb_dcd.h" path="USB/OTG_driver/usb_dcd.h" type="1"/>
+    <File name="heading.h" path="heading.h" type="1"/>
     <File name="STEMWIN/RADIO_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/RADIO_Private.h" type="1"/>
     <File name="FreeRTOS/FreeRTOS.h" path="FreeRTOS/Source/include/FreeRTOS.h" type="1"/>
     <File name="trace/trcKernelHooks.h" path="GenericRecorderLibSrc/Include/trcKernelHooks.h" type="1"/>
@@ -361,13 +364,14 @@
     <File name="STEMWIN/GUIDRV_Template.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/Config/GUIDRV_Template.h" type="1"/>
     <File name="USB/usbd_msc_mem.h" path="USB/DEVICE_lib/usbd_msc_mem.h" type="1"/>
     <File name="STEMWIN/MESSAGEBOX.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MESSAGEBOX.h" type="1"/>
-    <File name="libjpeg/jccoefct.c" path="libjpeg/jccoefct.c" type="1"/>
     <File name="STEMWIN/MULTIEDIT.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MULTIEDIT.h" type="1"/>
     <File name="trace/trcTypes.h" path="GenericRecorderLibSrc/Include/trcTypes.h" type="1"/>
+    <File name="libjpeg/jccoefct.c" path="libjpeg/jccoefct.c" type="1"/>
     <File name="USB/usbd_core.c" path="USB/DEVICE_lib/usbd_core.c" type="1"/>
     <File name="libjpeg/jdhuff.c" path="libjpeg/jdhuff.c" type="1"/>
     <File name="STEMWIN/GUI_Version.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_Version.h" type="1"/>
     <File name="STEMWIN/IMAGE_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/IMAGE_Private.h" type="1"/>
+    <File name="heading.c" path="heading.c" type="1"/>
     <File name="nokia_lcd/LCD_6300.c" path="nokia_LCD/LCD_6300.c" type="1"/>
     <File name="libjpeg/jcapistd.c" path="libjpeg/jcapistd.c" type="1"/>
     <File name="STEMWIN/bsp.h" path="STemWin/Config/bsp.h" type="1"/>
@@ -377,19 +381,19 @@
     <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="USB/usbh_msc_usr.c" path="USB/DRD/usbh_msc_usr.c" type="1"/>
     <File name="libjpeg/jdmaster.c" path="libjpeg/jdmaster.c" type="1"/>
-    <File name="STEMWIN/SLIDER_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/SLIDER_Private.h" type="1"/>
     <File name="STEMWIN/PROGBAR.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/PROGBAR.h" type="1"/>
-    <File name="FreeRTOS/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
+    <File name="STEMWIN/SLIDER_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/SLIDER_Private.h" type="1"/>
     <File name="USB/usb_core.h" path="USB/OTG_driver/usb_core.h" type="1"/>
-    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="FreeRTOS/semphr.h" path="FreeRTOS/Source/include/semphr.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_flash.c" path="cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="STEMWIN/LCD.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LCD.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
     <File name="STEMWIN/GUI_ConfDefaults.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_ConfDefaults.h" type="1"/>
     <File name="STEMWIN/Global.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/Global.h" type="1"/>
-    <File name="libjpeg/jctrans.c" path="libjpeg/jctrans.c" type="1"/>
     <File name="libjpeg/jdapistd.c" path="libjpeg/jdapistd.c" type="1"/>
     <File name="STEMWIN/FRAMEWIN.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/FRAMEWIN.h" type="1"/>
+    <File name="libjpeg/jctrans.c" path="libjpeg/jctrans.c" type="1"/>
     <File name="USB/usbh_hcs.h" path="USB/HOST_lib/usbh_hcs.h" type="1"/>
     <File name="trace" path="" type="2"/>
     <File name="STEMWIN/WM_GUI.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/WM_GUI.h" type="1"/>
@@ -399,8 +403,8 @@
     <File name="trace/trcHardwarePort.c" path="GenericRecorderLibSrc/trcHardwarePort.c" type="1"/>
     <File name="ff/ffconf.h" path="ff/ffconf.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
-    <File name="elements/button.h" path="elements/button.h" type="1"/>
     <File name="STEMWIN/GRAPH.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GRAPH.h" type="1"/>
+    <File name="elements/button.h" path="elements/button.h" type="1"/>
     <File name="cmsis_lib/source" path="" type="2"/>
     <File name="MP3/vs1003.c" path="vs1003.c" type="1"/>
     <File name="USB/usbd_msc_data.h" path="USB/DEVICE_lib/usbd_msc_data.h" type="1"/>
@@ -408,8 +412,8 @@
     <File name="libjpeg/jcmaster.c" path="libjpeg/jcmaster.c" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
     <File name="FreeRTOS/projdefs.h" path="FreeRTOS/Source/include/projdefs.h" type="1"/>
-    <File name="USB/usbh_msc_usr.h" path="USB/DRD/usbh_msc_usr.h" type="1"/>
     <File name="libjpeg/jdarith.c" path="libjpeg/jdarith.c" type="1"/>
+    <File name="USB/usbh_msc_usr.h" path="USB/DRD/usbh_msc_usr.h" type="1"/>
     <File name="ff/ff.c" path="ff/ff.c" type="1"/>
     <File name="STEMWIN/TEXT.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/TEXT.h" type="1"/>
     <File name="ff/diskio.h" path="ff/diskio.h" type="1"/>
@@ -427,15 +431,15 @@
     <File name="STEMWIN/GUIDRV_DCache.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUIDRV_DCache.h" type="1"/>
     <File name="STEMWIN/LISTBOX.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/LISTBOX.h" type="1"/>
     <File name="trace/trcHardwarePort.h" path="GenericRecorderLibSrc/Include/trcHardwarePort.h" type="1"/>
-    <File name="USB/usbd_req.h" path="USB/DEVICE_lib/usbd_req.h" type="1"/>
     <File name="STEMWIN/GUIDRV_Dist.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUIDRV_Dist.h" type="1"/>
+    <File name="USB/usbd_req.h" path="USB/DEVICE_lib/usbd_req.h" type="1"/>
     <File name="USB/usbh_conf.h" path="USB/DRD/usbh_conf.h" type="1"/>
     <File name="libjpeg/jdcolor.c" path="libjpeg/jdcolor.c" type="1"/>
     <File name="USB/usbd_req.c" path="USB/DEVICE_lib/usbd_req.c" type="1"/>
-    <File name="FreeRTOS/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
     <File name="libjpeg" path="" type="2"/>
-    <File name="USB/usb_defines.h" path="USB/OTG_driver/usb_defines.h" type="1"/>
+    <File name="FreeRTOS/portable.h" path="FreeRTOS/Source/include/portable.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="USB/usb_defines.h" path="USB/OTG_driver/usb_defines.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="USB/usbd_desc.c" path="USB/DRD/usbd_desc.c" type="1"/>
     <File name="syscalls" path="" type="2"/>
