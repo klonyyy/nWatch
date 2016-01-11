@@ -123,7 +123,6 @@ int main(void)
 
 	  vTraceInitTraceData();
 
-//
 	  WM_SetCreateFlags(WM_CF_MEMDEV);
 	  GUI_Init();
 	  WM_MOTION_Enable(1);
@@ -132,8 +131,6 @@ int main(void)
 //	  GPIOE->BSRRL|=GPIO_BSRR_BS_2;
 //
 //
-
-
 //		f=f_mount(&fs,"",0);
 //	    f=f_open(&fsrc,"jas.rgb", FA_READ | FA_OPEN_EXISTING );
 //	    f=f_open(&fsrc,"0:moje/car1.jpg", FA_READ | FA_OPEN_EXISTING );
@@ -173,7 +170,6 @@ int main(void)
 //      for(int i=0;i<10;i++)
 //	  {
 //	   	   DMA_Config(23040,Bank1_SRAM3_ADDR+i*23040);
-
 //    	  DMA_Config(230400,buffer);
 //	   	   while(!(DMA2->LISR & DMA_LISR_TCIF0)){};
 //	   	   DMA2->LISR=0x00000000;
@@ -205,14 +201,11 @@ int main(void)
 //	  GPIO_WriteBit(CS_PORT,CS_PIN,!State);
 //	  GPIO_WriteBit(XDCS_PORT,XDCS_PIN,!State);
 //	  GPIO_WriteBit(CS_PORT,CS_PIN,!State);
-
-
 //	  while(1){};
 //
 //	  GUI_Init();
 //	  GUI_CURSOR_Show();
 //	  WM_MOTION_Enable(1);
-
 //	  play_video("avifiles/birds_small2.avi");
 
 
@@ -226,11 +219,9 @@ int main(void)
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	ADC1_Configuration();
 
-
-
-	  xTaskCreate(Background_Task,(char const*)"Background",2048,NULL,tskIDLE_PRIORITY + 7,&Task_Handle);
-	  xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
-	  xTaskCreate(Heading_Task,(char const*)"Heading",1024,NULL,tskIDLE_PRIORITY  + 6,&Heading_Handle);
+	  xTaskCreate(Background_Task,(char const*)"Background",1024,NULL,tskIDLE_PRIORITY + 7,&Task_Handle);
+	  xTaskCreate(Menu,(char const*)"Menu",512,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
+	  xTaskCreate(Heading_Task,(char const*)"Heading",512,NULL,tskIDLE_PRIORITY  + 6,&Heading_Handle);
 	  TouchScreenTimer = xTimerCreate ("Timer",20, pdTRUE,( void * ) 1, vTimerCallback);
 
 
@@ -238,7 +229,6 @@ int main(void)
 	  {
 	     if( xTimerStart( TouchScreenTimer, 0 ) != pdPASS )
 	     {
-
 	     }
 	  }
 	    vTaskStartScheduler();
@@ -255,15 +245,13 @@ static void Background_Task(void * pvParameters)
 {
 	portTickType xLastFlashTime;
 	xLastFlashTime = xTaskGetTickCount();
-	xQueue_men = xQueueCreate(10, sizeof(u8));
+	xQueue_men = xQueueCreate(10, sizeof(int));
 
 	  while(1)
 	  {
-		  GUI_Delay(100);
+		  GUI_Delay(300);
 	  }
 }
-
-
 void exti_init(void)
 {
 	EXTI->IMR= EXTI_IMR_MR5;
@@ -683,26 +671,28 @@ void vApplicationMallocFailedHook( void )
 {
   while (1)
   {
-
+	  LCD_String_lc("MALLOC FAILED",5,10,RED,BLACK,2);
   }
 }
 void vApplicationIdleHook(void)
 {
 	int i=0;
-
+//
 	while(1)
 	{
 		i++;
-
-//		if(i>90000000)
-//		{
-//			LCD_String_lc("in idle",5,10,RED,GREEN,2);
+//
+		if(i>9000000)
+		{
+//			LCD_String_lc("IN IDLE",5,10,RED,GREEN,2);
 //			GUI_DispStringAt("IN IDLE",50,50);
-			i=0;
-//		}
+			LCD_box_mid_fill(318,238,4,4,RED);
+//			i=0;
+		}
 //		LCD_box_mid_fill(0,0,5,5,RED);
 //		GUI_DispStringAt("IN IDLE",50,50);
 //		LCD_String_lc("in idle",5,10,RED,GREEN,2);
+
 	}
 }
 //	  USBD_Init(&USB_OTG_Core,USB_OTG_FS_CORE_ID,&USR_desc,&USBD_MSC_cb,&USR_cb);

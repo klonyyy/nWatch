@@ -80,6 +80,8 @@ void HardFault_Handler(void)
   /* Go to infinite loop when Hard Fault exception occurs */
   while (1)
   {
+	  LCD_String_lc("!ACHTUNG!",4,9,0x0000ff,0x000000,2);
+	  LCD_String_lc("HARD FAULT",4,10,0x0000ff,0x000000,2);
   }
 }
 
@@ -93,7 +95,8 @@ void MemManage_Handler(void)
   /* Go to infinite loop when Memory Manage exception occurs */
   while (1)
   {
-
+	  LCD_String_lc("! ACHTUNG !",4,9,0xff0000,0x000000,2);
+	  LCD_String_lc("MEMORY FAULT",4,10,0xff0000,0x000000,2);
   }
 }
 

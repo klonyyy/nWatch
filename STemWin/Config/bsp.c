@@ -124,7 +124,7 @@ void BSP_Pointer_Update(void)
   xDiff = (prev_state.x > ts.x) ? (prev_state.x - ts.x) : (ts.x - prev_state.x);
   yDiff = (prev_state.y > ts.y) ? (prev_state.y - ts.y) : (ts.y - prev_state.y);
 //
-  if((xDiff > 4 ) || (yDiff > 4) || act!=prev)
+  if((xDiff > 5 ) || (yDiff > 5) || act!=prev)
   {
 	  prev=act;
       TS_State.Layer = 0;

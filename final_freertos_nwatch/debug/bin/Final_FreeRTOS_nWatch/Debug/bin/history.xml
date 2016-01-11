@@ -1,17 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -g -nostartfiles -Map=Final_FreeRTOS_nWatch.map -O1 --gc-sections -lm -lgcc -lc -LC:/CooCox/CoIDE/workspace/Final_FreeRTOS_nWatch -TC:/CooCox/CoIDE/workspace/Final_FreeRTOS_nWatch/arm-gcc-link.ld -g -L..\..\..\..\..\..\STemWin\Lib -lstemwin528_cm4_os_gcc_ot">
-      <target file="Final_FreeRTOS_nWatch.elf" lastModified="1522bfe29a2">
+      <target file="Final_FreeRTOS_nWatch.elf" lastModified="15232f9e38d">
          <source file="..\obj\jcdctmgr.o" lastModified="1522bd2ca0f"/>
+         <source file="..\obj\heap_4.o" lastModified="152325fd101"/>
          <source file="..\obj\jctrans.o" lastModified="1522bd2cb3c"/>
          <source file="..\obj\stm32f4xx_syscfg.o" lastModified="1522bd2cbd8"/>
          <source file="..\obj\usb_core.o" lastModified="1522bd2ce49"/>
-         <source file="..\obj\trcKernel.o" lastModified="1522bd2d06b"/>
+         <source file="..\obj\trcKernel.o" lastModified="152325fd35d"/>
          <source file="..\obj\jcapimin.o" lastModified="1522bd2d15d"/>
          <source file="..\obj\jaricom.o" lastModified="1522bd2d227"/>
          <source file="..\obj\GUIDRV_Template.o" lastModified="1522bd2d457"/>
          <source file="..\obj\stm32f4xx_sdio.o" lastModified="1522bd2d567"/>
-         <source file="..\obj\mp3.o" lastModified="1522bf8fa9b"/>
+         <source file="..\obj\mp3.o" lastModified="152325fd921"/>
          <source file="..\obj\button.o" lastModified="1522bd2d9e7"/>
          <source file="..\obj\GUIConf.o" lastModified="1522bd2db16"/>
          <source file="..\obj\jcprepct.o" lastModified="1522bd2dc72"/>
@@ -22,6 +23,7 @@
          <source file="..\obj\usbd_usr.o" lastModified="1522bd2e531"/>
          <source file="..\obj\bar.o" lastModified="1522bd2e683"/>
          <source file="..\obj\usbh_hcs.o" lastModified="1522bd2e872"/>
+         <source file="..\obj\manager.o" lastModified="15232f9db0b"/>
          <source file="..\obj\usbh_stdreq.o" lastModified="1522bd2e9e0"/>
          <source file="..\obj\stm32f4xx_pwr.o" lastModified="1522bd2ea74"/>
          <source file="..\obj\jidctint.o" lastModified="1522bd2ebbf"/>
@@ -38,11 +40,11 @@
          <source file="..\obj\jdtrans.o" lastModified="1522bd2fdf5"/>
          <source file="..\obj\usbd_core.o" lastModified="1522bd2fef0"/>
          <source file="..\obj\jfdctfst.o" lastModified="1522bd3000f"/>
-         <source file="..\obj\main.o" lastModified="1522be95e57"/>
-         <source file="..\obj\trcBase.o" lastModified="1522bd3103d"/>
+         <source file="..\obj\main.o" lastModified="15232d5b177"/>
+         <source file="..\obj\trcBase.o" lastModified="152325fed0a"/>
          <source file="..\obj\stm32f4xx_rcc.o" lastModified="1522bd311a2"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="1522bd31330"/>
-         <source file="..\obj\timers.o" lastModified="1522bd31590"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="15232898ce0"/>
+         <source file="..\obj\timers.o" lastModified="152325feeb7"/>
          <source file="..\obj\jmemnobs.o" lastModified="1522bd316ce"/>
          <source file="..\obj\stm32f4xx_adc.o" lastModified="1522bd31802"/>
          <source file="..\obj\jdhuff.o" lastModified="1522bd31a78"/>
@@ -50,19 +52,19 @@
          <source file="..\obj\usbh_msc_core.o" lastModified="1522bd31d76"/>
          <source file="..\obj\usbd_storage_msd.o" lastModified="1522bd31e1e"/>
          <source file="..\obj\bsp_jpg.o" lastModified="1522bd31f28"/>
-         <source file="..\obj\tasks.o" lastModified="1522bd3221b"/>
+         <source file="..\obj\tasks.o" lastModified="152325ff1e5"/>
          <source file="..\obj\jcsample.o" lastModified="1522bd3241b"/>
          <source file="..\obj\usbd_msc_scsi.o" lastModified="1522bd32632"/>
          <source file="..\obj\usbd_desc.o" lastModified="1522bd32a7a"/>
          <source file="..\obj\stm32f4xx_fsmc.o" lastModified="1522bd32bc9"/>
-         <source file="..\obj\menu.o" lastModified="1522bfe24c2"/>
-         <source file="..\obj\GUI_X_FreeRTOS.o" lastModified="1522bd330a7"/>
+         <source file="..\obj\menu.o" lastModified="15232cf4855"/>
+         <source file="..\obj\GUI_X_FreeRTOS.o" lastModified="152325ff717"/>
          <source file="..\obj\jutils.o" lastModified="1522bd33212"/>
          <source file="..\obj\decode.o" lastModified="1522bd33318"/>
          <source file="..\obj\usbh_core.o" lastModified="1522bd33501"/>
          <source file="..\obj\textbox.o" lastModified="1522bd33810"/>
-         <source file="..\obj\heading.o" lastModified="1522bf78728"/>
-         <source file="..\obj\trcKernelPortFreeRTOS.o" lastModified="1522bd33d07"/>
+         <source file="..\obj\heading.o" lastModified="15232f9dde4"/>
+         <source file="..\obj\trcKernelPortFreeRTOS.o" lastModified="152325ffcb6"/>
          <source file="..\obj\usbh_msc_usr.o" lastModified="1522bd33e14"/>
          <source file="..\obj\stm32f4xx_gpio.o" lastModified="1522bd33f09"/>
          <source file="..\obj\jdapistd.o" lastModified="1522bd340b4"/>
@@ -72,18 +74,18 @@
          <source file="..\obj\jdatadst.o" lastModified="1522bd348bb"/>
          <source file="..\obj\usbh_msc_scsi.o" lastModified="1522bd349ed"/>
          <source file="..\obj\LCD_6300.o" lastModified="1522bd34e4a"/>
-         <source file="..\obj\list.o" lastModified="1522bd34fe1"/>
+         <source file="..\obj\list.o" lastModified="152325ffe32"/>
          <source file="..\obj\system_stm32f4xx.o" lastModified="1522bd350d1"/>
          <source file="..\obj\syscalls.o" lastModified="1522bd3528c"/>
          <source file="..\obj\stm32f4xx_dma.o" lastModified="1522bd3547a"/>
          <source file="..\obj\stmpe811.o" lastModified="1522bd3597e"/>
          <source file="..\obj\ccsbcs.o" lastModified="1522bd35a2d"/>
-         <source file="..\obj\trcUser.o" lastModified="1522bd35c69"/>
+         <source file="..\obj\trcUser.o" lastModified="1523260009b"/>
          <source file="..\obj\win.o" lastModified="1522bd3630f"/>
          <source file="..\obj\usb_bsp.o" lastModified="1522bd36517"/>
          <source file="..\obj\usbd_req.o" lastModified="1522bd366ad"/>
-         <source file="..\obj\queue.o" lastModified="1522bd369d1"/>
-         <source file="..\obj\port.o" lastModified="1522bd36b80"/>
+         <source file="..\obj\queue.o" lastModified="152326002f7"/>
+         <source file="..\obj\port.o" lastModified="1523260046b"/>
          <source file="..\obj\usb_dcd_int.o" lastModified="1522bd36ce0"/>
          <source file="..\obj\usbd_msc_data.o" lastModified="1522bd36d96"/>
          <source file="..\obj\jfdctint.o" lastModified="1522bd36efa"/>
@@ -92,7 +94,7 @@
          <source file="..\obj\ff.o" lastModified="1522bd379b7"/>
          <source file="..\obj\usb_hcd.o" lastModified="1522bd37ab7"/>
          <source file="..\obj\usbh_msc_bot.o" lastModified="1522bd37b82"/>
-         <source file="..\obj\croutine.o" lastModified="1522bd37cb8"/>
+         <source file="..\obj\croutine.o" lastModified="152326005f6"/>
          <source file="..\obj\jcinit.o" lastModified="1522bd37ee7"/>
          <source file="..\obj\usb_otg.o" lastModified="1522bd3807d"/>
          <source file="..\obj\jidctfst.o" lastModified="1522bd3826a"/>
@@ -100,15 +102,15 @@
          <source file="..\obj\jerror.o" lastModified="1522bd384ca"/>
          <source file="..\obj\itoa.o" lastModified="1522bd3854e"/>
          <source file="..\obj\jdmaster.o" lastModified="1522bd3869b"/>
-         <source file="..\obj\event_groups.o" lastModified="1522bd38884"/>
-         <source file="..\obj\bsp.o" lastModified="1522bd38cec"/>
+         <source file="..\obj\event_groups.o" lastModified="152326007c9"/>
+         <source file="..\obj\bsp.o" lastModified="15232600b7a"/>
          <source file="..\obj\stm32f4xx_i2c.o" lastModified="1522bd38e4e"/>
          <source file="..\obj\stm32f4xx_rng.o" lastModified="1522bd38fcd"/>
          <source file="..\obj\jcapistd.o" lastModified="1522bd391a8"/>
          <source file="..\obj\stm32f4xx_exti.o" lastModified="1522bd392b1"/>
          <source file="..\obj\usbh_ioreq.o" lastModified="1522bd3946e"/>
          <source file="..\obj\jcmarker.o" lastModified="1522bd39674"/>
-         <source file="..\obj\trcHardwarePort.o" lastModified="1522bd39852"/>
+         <source file="..\obj\trcHardwarePort.o" lastModified="15232600d1a"/>
          <source file="..\obj\jddctmgr.o" lastModified="1522bd39a76"/>
          <source file="..\obj\misc.o" lastModified="1522bd39b9f"/>
          <source file="..\obj\usb_dcd.o" lastModified="1522bd39cc7"/>
@@ -125,7 +127,6 @@
          <source file="..\obj\usbd_msc_bot.o" lastModified="1522bd3b2ef"/>
          <source file="..\obj\jccoefct.o" lastModified="1522bd3b49c"/>
          <source file="..\obj\jquant2.o" lastModified="1522bd3b843"/>
-         <source file="..\obj\heap_2.o" lastModified="1522bd3ba22"/>
          <source file="..\obj\jccolor.o" lastModified="1522bd3bcaf"/>
          <source file="..\obj\jdatasrc.o" lastModified="1522bd3be63"/>
          <source file="..\obj\stm32f4xx_tim.o" lastModified="1522bd3c1d5"/>

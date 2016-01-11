@@ -1444,7 +1444,7 @@ static void _cbMenu(WM_MESSAGE * pMsg)
   WM_MOTION_INFO * pInfo;
   WM_HWIN hWin, hButton;
   static int IsPressed;
-
+  int a=-1;
   hWin = pMsg->hWin;
   switch (pMsg->MsgId) {
   case WM_NOTIFY_PARENT:
@@ -1457,13 +1457,21 @@ static void _cbMenu(WM_MESSAGE * pMsg)
     case WM_NOTIFICATION_RELEASED:
       if (IsPressed)
       {
-    	if(Id - GUI_ID_BUTTON0==2)
+    	a=Id - GUI_ID_BUTTON0;
+
+    	xQueueSend(xQueue_men, (void *) &a, (portTickType) 10);
+
+    	if(a==1)
     	{
-    		  xTaskCreate(MP3_player,(char const*)"MP3_player",1024,NULL,tskIDLE_PRIORITY + 6,&MP3_Handle);
-//    		  vTaskDelete(Menu_Handle);
+    		xTaskCreate(Manager,(char const*)"Manager",512,NULL,tskIDLE_PRIORITY + 6,&Manager_Handle);
+    	}
+    	else if(a==2)
+    	{
+    		xTaskCreate(MP3_player,(char const*)"MP3_player",512,NULL,tskIDLE_PRIORITY + 6,&MP3_Handle);
     	}
         IsPressed = 0;
       }
+
       break;
     case WM_NOTIFICATION_MOVED_OUT:
         IsPressed = 0;
@@ -1528,7 +1536,7 @@ void Menu(void *pvParameters)
 	portTickType xLastFlashTime;
 	xLastFlashTime = xTaskGetTickCount();
 
-	  u8 inde=-1;
+	  int a=-1;
 	  int xSize, ySize;
 	  WM_HWIN hWinViewport; // Viewport window
 	  WM_HWIN hWinMenu;     // Menu window moveable within viewport window
@@ -1548,12 +1556,6 @@ void Menu(void *pvParameters)
 	{
 		GUI_Exec();
 
-//		hButton = WM_GetDialogItem(hWinMenu, GUI_ID_BUTTON0 + 2);
-//
-//		if(BUTTON_IsPressed(hButton) && inde==2)
-//		{
-
-//		}
 	}
 }
 

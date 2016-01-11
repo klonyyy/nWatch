@@ -52,7 +52,8 @@ static TCHAR lfname[_MAX_LFN];
 #include "queue.h"
 #include "trcUser.h"
 /////////////////////////////////////APPS//////////////////////////////////////////////
-//#include "mp3.h"
+#include "mp3.h"
+#include "manager.h"
 //#include "bar.h"
 //#include "heading.h"
 //#include "menu.h"
@@ -70,6 +71,7 @@ xTaskHandle                   Task_Handle;
 xTaskHandle                   Heading_Handle;
 xTaskHandle                   MP3_Handle;
 xTaskHandle                   Menu_Handle;
+xTaskHandle                   Manager_Handle;
 xTimerHandle                  TouchScreenTimer;
 
 xQueueHandle                  xQueue_men;

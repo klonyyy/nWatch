@@ -1,6 +1,7 @@
 #include "heading.h"
 #include "menu.h"
 
+int aa=-1;
 /*********************************************************************
 *
 *       _cbHeading
@@ -14,6 +15,7 @@ static void _cbHeading(WM_MESSAGE * pMsg)
   const GUI_BITMAP * pBm;
   WM_HWIN hWin,hButton;
   static int Index,NCode;
+  int a=-2;
 
   hWin = pMsg->hWin;
   switch (pMsg->MsgId)
@@ -44,44 +46,54 @@ static void _cbHeading(WM_MESSAGE * pMsg)
      {
 		 case WM_NOTIFICATION_CLICKED:
 		 {
-			 xTaskCreate(Menu,(char const*)"Menu",1024,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
-			 vTaskDelete(MP3_Handle);
+			 a=-1;
+			 xTaskCreate(Menu,(char const*)"Menu",512,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
+			 if(aa==2)vTaskDelete(MP3_Handle);
+			 if(aa==1)vTaskDelete(Manager_Handle);
 			 break;
 		 }
      }
      break;
    }
   case WM_PAINT:
-    //
-    // Get window dimension
-    //
-    xSize = WM_GetWindowSizeX(hWin);
-    //
-    // Draw logo, battery and clock
-    //
-    xPos = xSize;
-//    pBm = &_bmLogoSegger_40x20;
-    GUI_SetColor(0xf8f8f8);
-    GUI_FillRect(0, 0, xSize - 1, 57);
-    GUI_SetColor(0xb2b2b2);
-    GUI_FillRect(0, 58, xSize - 1, 59);
-//    GUI_DrawBitmap(pBm, 0, 0);
-    pBm = &_bmBatteryEmpty_27x14;
-    xPos -= pBm->XSize + 3;
-    GUI_DrawBitmap(pBm, xPos, 3);
-    pBm = _apbmCharge[Index];
-    GUI_DrawBitmap(pBm, xPos, 3);
-//    pBm = &bmClock_16x16_black;
-//    xPos -= pBm->XSize + 10;
-//    GUI_DrawBitmap(pBm, xPos, 2);
-    //
-    // Draw 'Settings'
-    //
-    GUI_SetFont(&GUI_Font24_ASCII);
-    GUI_SetColor(GUI_BLACK);
-    GUI_SetTextMode(GUI_TM_TRANS);
-    GUI_DispStringHCenterAt("Settings", xSize / 2, 20);
-    break;
+  {
+		xSize = WM_GetWindowSizeX(hWin);
+		xPos = xSize;
+		GUI_SetColor(0xf8f8f8);
+		GUI_FillRect(0, 0, xSize - 1, 57);
+		GUI_SetColor(0xb2b2b2);
+		GUI_FillRect(0, 58, xSize - 1, 59);
+		pBm = &_bmBatteryEmpty_27x14;
+		xPos -= pBm->XSize + 3;
+		GUI_DrawBitmap(pBm, xPos, 3);
+		pBm = _apbmCharge[Index];
+		GUI_DrawBitmap(pBm, xPos, 3);
+		 GUI_SetFont(&GUI_Font24_ASCII);
+		 GUI_SetColor(GUI_BLACK);
+		 GUI_SetTextMode(GUI_TM_TRANS);
+
+		 xQueueReceive(xQueue_men, &a, (portTickType) 10);
+
+		 if(a==-2)a=aa;
+
+			 switch(a)
+			 {
+//				  case -1:
+//				  {
+//					  GUI_DispStringHCenterAt("Menu", xSize / 2, 20);
+//					  break;
+//				  }
+//				  case 2:
+//				  {
+//					  GUI_DispStringHCenterAt("MP3 Player", xSize / 2, 20);
+//					  break;
+//				  }
+			 	 default:
+				 GUI_DispDecAt(xPortGetFreeHeapSize(),160,230,5);
+			 }
+			 aa=a;
+		break;
+  }
   default:
     WM_DefaultProc(pMsg);
   }

@@ -247,7 +247,7 @@ void MP3_player(void *pvParameters)
 	name[4]='c';
 	name[5]='/';
 
-
+	vTaskDelete(Menu_Handle);
 
 	while(1)
 	{
@@ -330,6 +330,7 @@ void MP3_player(void *pvParameters)
 			while(BUTTON_IsPressed(hButton1)){};
 			fin=1;
 			next-=2;
+			vTraceStart();
 		}
 //
 

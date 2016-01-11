@@ -178,6 +178,7 @@
     <File name="USB/usbd_msc_data.c" path="USB/DEVICE_lib/usbd_msc_data.c" type="1"/>
     <File name="libjpeg/jdcoefct.c" path="libjpeg/jdcoefct.c" type="1"/>
     <File name="libjpeg/jddctmgr.c" path="libjpeg/jddctmgr.c" type="1"/>
+    <File name="FreeRTOS/memory/heap_4.c" path="FreeRTOS/Source/portable/MemMang/heap_4.c" type="1"/>
     <File name="STEMWIN/GUI_JPEG_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/GUI_JPEG_Private.h" type="1"/>
     <File name="trace/trcConfig.h" path="GenericRecorderLibSrc/ConfigurationTemplate/trcConfig.h" type="1"/>
     <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
@@ -289,6 +290,7 @@
     <File name="my_win/win.h" path="STemWinLibrary522/win.h" type="1"/>
     <File name="sram/sram.c" path="sram/sram.c" type="1"/>
     <File name="STEMWIN/MULTIPAGE_Private.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/MULTIPAGE_Private.h" type="1"/>
+    <File name="manager.c" path="manager.c" type="1"/>
     <File name="mp3.c" path="mp3.c" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
@@ -315,7 +317,6 @@
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name="libjpeg/jdsample.c" path="libjpeg/jdsample.c" type="1"/>
     <File name="STEMWIN/IMAGE.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/IMAGE.h" type="1"/>
-    <File name="FreeRTOS/memory/heap_2.c" path="FreeRTOS/Source/portable/MemMang/heap_2.c" type="1"/>
     <File name="mp3.h" path="mp3.h" type="1"/>
     <File name="STEMWIN/HEADER.h" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/inc/HEADER.h" type="1"/>
     <File name="libjpeg/jdmarker.c" path="libjpeg/jdmarker.c" type="1"/>
@@ -335,6 +336,7 @@
     <File name="STEMWIN/GUIDRV_Template.c" path="../../../../Users/Uniwersytet Medyczny/Desktop/piotrek moje/STM32_KODY/STM32Cube_FW_F4_V1.8.0/Middlewares/ST/STemWin/Config/GUIDRV_Template.c" type="1"/>
     <File name="libjpeg/jcapimin.c" path="libjpeg/jcapimin.c" type="1"/>
     <File name="my_win/win.c" path="STemWinLibrary522/win.c" type="1"/>
+    <File name="manager.h" path="manager.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
     <File name="nokia_lcd/fonts.h" path="nokia_LCD/fonts.h" type="1"/>
     <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
