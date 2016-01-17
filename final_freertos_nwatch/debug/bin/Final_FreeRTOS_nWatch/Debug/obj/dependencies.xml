@@ -209,13 +209,13 @@
          <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
          <include file="..\..\..\..\..\..\USB\DRD\usbh_conf.h"/>
       </source>
-      <source file="..\..\..\..\..\..\libjpeg\jmemsys.h" lastModified="14e8ca1066e">
-      </source>
       <source file="..\..\..\..\..\..\USB\DRD\usbh_msc_usr.h" lastModified="14a0f652ea8">
          <include file="..\..\..\..\..\..\ff\ff.h"/>
          <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_core.h"/>
          <include file="..\..\..\..\..\..\USB\DRD\usb_conf.h"/>
          <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_msc_core.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\libjpeg\jmemsys.h" lastModified="14e8ca1066e">
       </source>
       <source file="..\..\..\..\..\..\mp3.c" lastModified="15231c8d475">
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
@@ -542,16 +542,16 @@
       </source>
       <source file="..\..\..\..\..\..\cmsis\core_cmFunc.h" lastModified="14f9f733089">
       </source>
+      <source file="..\..\..\..\..\..\GenericRecorderLibSrc\trcKernelPortFreeRTOS.c" lastModified="1521c4273a5">
+         <include file="..\..\..\..\..\..\GenericRecorderLibSrc\Include\trcKernelPortFreeRTOS.h"/>
+         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
+      </source>
       <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\SPINBOX.h" lastModified="14e91699758">
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG_Intern.h"/>
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WIDGET.h"/>
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\GUI_Debug.h"/>
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\EDIT.h"/>
-      </source>
-      <source file="..\..\..\..\..\..\GenericRecorderLibSrc\trcKernelPortFreeRTOS.c" lastModified="1521c4273a5">
-         <include file="..\..\..\..\..\..\GenericRecorderLibSrc\Include\trcKernelPortFreeRTOS.h"/>
-         <include file="..\..\..\..\..\..\FreeRTOS\Source\include\task.h"/>
       </source>
       <source file="..\..\..\..\..\..\USB\DRD\usbh_conf.h" lastModified="14a0f652ac0">
       </source>
@@ -573,6 +573,10 @@
          <include file="..\..\..\..\..\..\libjpeg\jinclude.h"/>
          <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
          <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\manager.c" lastModified="15237f72775">
+         <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\DIALOG.h"/>
+         <include file="..\..\..\..\..\..\manager.h"/>
       </source>
       <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MULTIEDIT.h" lastModified="14e916997a8">
          <include file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\WM.h"/>
@@ -722,6 +726,10 @@
       <source file="..\..\..\..\..\..\cmsis_lib\source\stm32f4xx_pwr.c" lastModified="14f9f8333d8">
          <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_pwr.h"/>
          <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\..\..\..\heading.c" lastModified="152441d74f0">
+         <include file="..\..\..\..\..\..\heading.h"/>
+         <include file="..\..\..\..\..\..\menu.h"/>
       </source>
       <source file="..\..\..\..\..\..\FreeRTOS\Source\portable\MemMang\heap_4.c" lastModified="14e9168f0a2">
          <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h"/>
@@ -881,7 +889,7 @@
          <include file="..\..\..\..\..\..\USB\HOST_lib\usbh_def.h"/>
          <include file="..\..\..\..\..\..\USB\OTG_driver\usb_hcd_int.h"/>
       </source>
-      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h" lastModified="1522ba2c902">
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOS.h" lastModified="152420a81b8">
          <include file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOSConfig_template.h"/>
          <include file="..\..\..\..\..\..\FreeRTOS\Source\include\projdefs.h"/>
          <include file="..\..\..\..\..\..\FreeRTOS\Source\include\portable.h"/>
@@ -893,7 +901,7 @@
       <source file="..\..\..\..\..\..\menu.h" lastModified="1522b89c1c1">
          <include file="..\..\..\..\..\..\global_inc.h"/>
       </source>
-      <source file="..\..\..\..\..\..\menu.c" lastModified="15232cf3b4e">
+      <source file="..\..\..\..\..\..\menu.c" lastModified="15237ee30ed">
          <include file="..\..\..\..\..\..\menu.h"/>
          <include file="..\..\..\..\..\..\mp3.h"/>
       </source>
@@ -1023,7 +1031,7 @@
          <include file="..\..\..\..\..\..\libjpeg\jpeglib.h"/>
          <include file="..\..\..\..\..\..\libjpeg\jdct.h"/>
       </source>
-      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOSConfig_template.h" lastModified="152325faed3">
+      <source file="..\..\..\..\..\..\FreeRTOS\Source\include\FreeRTOSConfig_template.h" lastModified="152420a7d8d">
          <include file="..\..\..\..\..\..\GenericRecorderLibSrc\Include\trcKernelPortFreeRTOS.h"/>
       </source>
       <source file="..\..\..\..\..\..\..\..\..\..\Users\Uniwersytet Medyczny\Desktop\piotrek moje\STM32_KODY\STM32Cube_FW_F4_V1.8.0\Middlewares\ST\STemWin\inc\MULTIPAGE.h" lastModified="14e9169aad8">
@@ -1224,7 +1232,7 @@
       </source>
       <source file="..\..\..\..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1521c72bc45">
       </source>
-      <source file="..\..\..\..\..\..\main.c" lastModified="15232d5a0f8">
+      <source file="..\..\..\..\..\..\main.c" lastModified="15237ee35a7">
          <include file="..\..\..\..\..\..\main.h"/>
          <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
@@ -1270,7 +1278,7 @@
          <include file="..\..\..\..\..\..\menu.h"/>
          <include file="..\..\..\..\..\..\cmsis_lib\include\stm32f4xx_rng.h"/>
       </source>
-      <source file="..\..\..\..\..\..\global_inc.h" lastModified="152320c2601">
+      <source file="..\..\..\..\..\..\global_inc.h" lastModified="15237f8766a">
          <include file="..\..\..\..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\..\..\..\cmsis\core_cm4.h"/>

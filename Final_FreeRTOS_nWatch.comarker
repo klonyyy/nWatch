@@ -3,46 +3,81 @@
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/Final_FreeRTOS_nWatch/main.c" type="1"/>
 <marker lineNumber="2222" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="message" value="Line breakpoint: main.c [line: 2222]"/>
+<attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
 <attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\main.c"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: main.c [line: 2222]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Final_FreeRTOS_nWatch/main.c"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\main.c"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/Final_FreeRTOS_nWatch/main.c" type="1"/>
 <marker lineNumber="2118" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="message" value="Line breakpoint: main.c [line: 2118]"/>
+<attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
 <attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\main.c"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: main.c [line: 2118]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Final_FreeRTOS_nWatch/main.c"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\main.c"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
-<attrib name="workingset_name" value=""/>
-<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
 </marker>
 </breakpoint>
 <breakpoint enabled="true" persistant="true" registered="true">
 <resource path="/Final_FreeRTOS_nWatch/main.c" type="1"/>
 <marker lineNumber="2253" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
-<attrib name="message" value="Line breakpoint: main.c [line: 2253]"/>
+<attrib name="enabled" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
 <attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
 <attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
-<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\main.c"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
 <attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: main.c [line: 2253]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Final_FreeRTOS_nWatch/main.c"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\main.c"/>
 <attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 <attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/Final_FreeRTOS_nWatch/heading.c" type="1"/>
+<marker lineNumber="54" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
 <attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
 <attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: heading.c [line: 53]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/Final_FreeRTOS_nWatch/heading.c"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="C:\CooCox\CoIDE\workspace\Final_FreeRTOS_nWatch\heading.c"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
 </marker>
 </breakpoint>
 </breakpoints>

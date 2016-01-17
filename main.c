@@ -223,7 +223,7 @@ int main(void)
 	  xTaskCreate(Menu,(char const*)"Menu",512,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
 	  xTaskCreate(Heading_Task,(char const*)"Heading",512,NULL,tskIDLE_PRIORITY  + 6,&Heading_Handle);
 	  TouchScreenTimer = xTimerCreate ("Timer",20, pdTRUE,( void * ) 1, vTimerCallback);
-
+//	  xTaskCreate(Manager,(char const*)"Manager",512,NULL,tskIDLE_PRIORITY + 6,&Manager_Handle);
 
 	  if( TouchScreenTimer != NULL )
 	  {
@@ -674,27 +674,27 @@ void vApplicationMallocFailedHook( void )
 	  LCD_String_lc("MALLOC FAILED",5,10,RED,BLACK,2);
   }
 }
-void vApplicationIdleHook(void)
-{
-	int i=0;
+//void vApplicationIdleHook(void)
+//{
+//	int i=0;
 //
-	while(1)
-	{
-		i++;
+//	while(1)
+//	{
+//		i++;
 //
-		if(i>9000000)
-		{
+//		if(i>9000000)
+//		{
 //			LCD_String_lc("IN IDLE",5,10,RED,GREEN,2);
 //			GUI_DispStringAt("IN IDLE",50,50);
-			LCD_box_mid_fill(318,238,4,4,RED);
+//			LCD_box_mid_fill(318,238,4,4,RED);
 //			i=0;
-		}
+//		}
 //		LCD_box_mid_fill(0,0,5,5,RED);
 //		GUI_DispStringAt("IN IDLE",50,50);
 //		LCD_String_lc("in idle",5,10,RED,GREEN,2);
 
-	}
-}
+//	}
+//}
 //	  USBD_Init(&USB_OTG_Core,USB_OTG_FS_CORE_ID,&USR_desc,&USBD_MSC_cb,&USR_cb);
 //	  while(1){};
 

@@ -2,6 +2,7 @@
 #include "menu.h"
 
 int aa=-1;
+
 /*********************************************************************
 *
 *       _cbHeading
@@ -47,9 +48,14 @@ static void _cbHeading(WM_MESSAGE * pMsg)
 		 case WM_NOTIFICATION_CLICKED:
 		 {
 			 a=-1;
-			 xTaskCreate(Menu,(char const*)"Menu",512,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
-			 if(aa==2)vTaskDelete(MP3_Handle);
-			 if(aa==1)vTaskDelete(Manager_Handle);
+
+			if(aa!=-1)
+			{
+				 xTaskCreate(Menu,(char const*)"Menu",512,NULL,tskIDLE_PRIORITY + 6,&Menu_Handle);
+				 if(aa==2)vTaskDelete(MP3_Handle);
+				 if(aa==1)vTaskDelete(Manager_Handle);
+				 aa=-1;
+			}
 			 break;
 		 }
      }
@@ -78,18 +84,24 @@ static void _cbHeading(WM_MESSAGE * pMsg)
 
 			 switch(a)
 			 {
-//				  case -1:
-//				  {
-//					  GUI_DispStringHCenterAt("Menu", xSize / 2, 20);
-//					  break;
-//				  }
-//				  case 2:
-//				  {
-//					  GUI_DispStringHCenterAt("MP3 Player", xSize / 2, 20);
-//					  break;
-//				  }
-			 	 default:
-				 GUI_DispDecAt(xPortGetFreeHeapSize(),160,230,5);
+				  case -1:
+				  {
+					  GUI_DispStringHCenterAt("Menu", xSize / 2, 20);
+					  break;
+				  }
+				  case 1:
+				  {
+					  GUI_DispStringHCenterAt("Manager", xSize / 2, 20);
+					  break;
+				  }
+				  case 2:
+				  {
+					  GUI_DispStringHCenterAt("MP3 Player", xSize / 2, 20);
+					  break;
+				  }
+//			 	 default:
+//				 GUI_DispStringHCenterAt(itoa(xPortGetFreeHeapSize(),t,10), xSize / 2, 20);
+//			 		 GUI_DispDecAt(a,160,230,5);
 			 }
 			 aa=a;
 		break;
@@ -110,6 +122,8 @@ static void _cbDummy1(WM_MESSAGE * pMsg)
 
 void Heading_Task( void * pvParameters)
 {
+	int l=0;
+
 	portTickType xLastFlashTime;
 	xLastFlashTime = xTaskGetTickCount();
 
@@ -125,7 +139,8 @@ void Heading_Task( void * pvParameters)
 	{
 		vTaskDelay(100);
 		WM_Paint(hWinHeading);
-
+//		if(l<100)mem[l++]=4000-xPortGetFreeHeapSize();
+//		else l=0;
 //
 //	    ADC_SoftwareStartConv(ADC1);
 //	    while(ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) == RESET);

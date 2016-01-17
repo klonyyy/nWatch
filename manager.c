@@ -82,18 +82,20 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
 		GRAPH_SetGridFixedX(hItem, 1);
 		GRAPH_SetGridFixedX(hItem1, 1);
 
-		_hScaleV = GRAPH_SCALE_Create( 50, GUI_TA_RIGHT, GRAPH_SCALE_CF_VERTICAL, 50);
-		GRAPH_SCALE_SetTextColor(_hScaleV, GUI_YELLOW);
+		_hScaleV = GRAPH_SCALE_Create( 5, GUI_TA_RIGHT, GRAPH_SCALE_CF_VERTICAL, 4000);
+		GRAPH_SCALE_SetTextColor(_hScaleV, GUI_GREEN);
 		GRAPH_AttachScale(hItem, _hScaleV);
 		GRAPH_AttachScale(hItem1, _hScaleV);
 		//
 		// Create and add horizontal scale
 		//
-		_hScaleH = GRAPH_SCALE_Create(50, GUI_TA_HCENTER, GRAPH_SCALE_CF_HORIZONTAL, 50);
-		GRAPH_SCALE_SetTextColor(_hScaleH, GUI_DARKGREEN);
+		_hScaleH = GRAPH_SCALE_Create(5, GUI_TA_CENTER, GRAPH_SCALE_CF_HORIZONTAL, 50);
+		GRAPH_SCALE_SetTextColor(_hScaleH, GUI_BLUE);
 		GRAPH_AttachScale(hItem, _hScaleH);
 		GRAPH_AttachScale(hItem1, _hScaleH);
 
+		  _ahData = GRAPH_DATA_YT_Create(GUI_BLUE, 500 , mem, 100);
+		   GRAPH_AttachData(hItem, _ahData);
 
 		break;
 	  }
@@ -148,7 +150,7 @@ void Manager(void *pvParameters)
 		vTaskDelay(1000);
 		for (int i = 0; i<10; i++)
 		{
-		  _aValue[i] = get_random(0,50);
+		  _aValue[i] = get_random(0,4000);
 		}
 		GRAPH_DATA_YT_AddValue(_ahData, _aValue[0]);
 		GRAPH_DATA_YT_AddValue(_ahData1, _aValue[2]);

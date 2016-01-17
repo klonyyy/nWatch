@@ -77,5 +77,6 @@ xTimerHandle                  TouchScreenTimer;
 xQueueHandle                  xQueue_men;
 
 char t[10];
+int mem[101];
 
 #endif
